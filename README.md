@@ -4,6 +4,8 @@
 [![Version](https://img.shields.io/cocoapods/v/MeteoLVProvider.svg?style=flat)](http://cocoapods.org/pods/MeteoLVProvider)
 [![License](https://img.shields.io/cocoapods/l/MeteoLVProvider.svg?style=flat)](http://cocoapods.org/pods/MeteoLVProvider)
 [![Platform](https://img.shields.io/cocoapods/p/MeteoLVProvider.svg?style=flat)](http://cocoapods.org/pods/MeteoLVProvider)
+[![Build Status](https://travis-ci.org/fassko/MeteoLVProvider.svg?branch=master)](https://travis-ci.org/fassko/MeteoLVProvider)
+[![CircleCI](https://circleci.com/gh/fassko/MeteoLVProvider.svg?style=svg)](https://circleci.com/gh/fassko/MeteoLVProvider)
 
 ## Example
 
