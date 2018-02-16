@@ -1,6 +1,0 @@
-framework module MeteoLVProvider {
-  umbrella header "MeteoLVProvider-umbrella.h"
-
-  export *
-  module * { export * }
-}
