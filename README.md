@@ -22,7 +22,7 @@ pod 'MeteoLVProvider'
 
 ## Author
 
-fassko, kristaps@qminderapp.com
+Kristaps Grinbergs, fassko@gmail.com
 
 ## License
 

@@ -47,9 +47,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "MeteoLVProvider_Tests.xctest"
-               BlueprintName = "MeteoLVProvider_Tests"
+               BlueprintIdentifier = "63660096203779B2006D6DD9"
+               BuildableName = "MeteoLVProvider_ExampleTests.xctest"
+               BlueprintName = "MeteoLVProvider_ExampleTests"
                ReferencedContainer = "container:MeteoLVProvider.xcodeproj">
             </BuildableReference>
          </TestableReference>
