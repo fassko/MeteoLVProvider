@@ -15,11 +15,6 @@ jobs:
           name: Pod lib lint
           command: pod lib lint --allow-warnings
 
-      - save_cache:
-         key: cocoapods-{{ checksum "MeteoLVProvider.podspec" }}
-         paths:
-           - ~/.cocoapods
-
 workflows:
   version: 2
   build-and-test:
