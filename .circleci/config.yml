@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build-and-test:
+    macos:
+      xcode: "9.2.0"
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: cocoapods-{{ checksum "MeteoLVProvider.podspec" }}
+
+      - run:
+          name: Update cocoapods
+          command: cd Example && pod update
+
+      
+      - run:
+          name: Start vapor and test
+          command: set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/MeteoLVProvider.xcworkspace -scheme MeteoLVProvider-Example -destination 'platform=iOS Simulator,name=iPhone X' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean test build | xcpretty
+
+      - run:
+          name: Pod lib lint
+          command: pod lib lint --allow-warnings
+
+      - save_cache:
+         key: cocoapods-{{ checksum "MeteoLVProvider.podspec" }}
+         paths:
+           - ~/.cocoapods
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - build-and-test
