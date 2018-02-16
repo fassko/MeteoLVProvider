@@ -5,6 +5,9 @@ public struct MeteoLVProvider {
   
   /**
     Get observtions
+   
+    - Parameters:
+      - completion: Completion block with Result type
   */
   public static func observations(completion: @escaping (Result<[Station]>) -> Void) {
     let url = URL(string: "http://www.meteo.lv/meteorologijas-operativie-dati/")!

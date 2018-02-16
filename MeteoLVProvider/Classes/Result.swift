@@ -7,7 +7,12 @@
 
 import Foundation
 
+/// Result type
 public enum Result<T> {
+
+  /// Success
   case success(T)
+  
+  /// Failure
   case failure(Error)
 }
