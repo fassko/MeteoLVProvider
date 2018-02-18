@@ -6,6 +6,10 @@ jobs:
 
     steps:
       - checkout
+      
+      - run:
+          name: Pod update
+          command: pod install --project-directory=Example --repo-update
 
       - run:
           name: Test and build
