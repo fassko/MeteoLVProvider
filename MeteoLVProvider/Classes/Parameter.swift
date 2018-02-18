@@ -1,14 +1,14 @@
 import Foundation
 
 /// Observation parameter
-struct Parameter: Codable {
+public struct Parameter: Codable {
 
   /// Name
-	let name: String
+	public let name: String
  
   /// Parameter ID
-	let parameterId: String?
+	public let parameterId: String?
  
   /// Value
-	let value: String?
+	public let value: String?
 }

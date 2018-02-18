@@ -7,23 +7,23 @@ public struct Station: Codable {
 	let id: String
   
   /// Name
-	let name: String
+	public let name: String
  
   /// Latitude
-	let latitude: Double
+	public let latitude: Double
  
   /// Longitude
-	let longitude: Double
+	public let longitude: Double
  
   /// Icon
-	let icon: String?
+	public let icon: String?
  
   /// Icon title
-	let iconTitle: String?
+	public let iconTitle: String?
  
   /// Temperature
-	let temperature: String?
+	public let temperature: String?
  
   /// Parameters
-  let parameters: [Parameter]?
+  public let parameters: [Parameter]?
 }
