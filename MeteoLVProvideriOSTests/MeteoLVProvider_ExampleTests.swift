@@ -56,7 +56,12 @@ class MeteoLVProvider_ExampleTests: XCTestCase {
       return
     }
     
+    XCTAssertNotNil(station.name)
+    XCTAssertNotNil(station.road)
+    XCTAssertNotNil(station.km)
     XCTAssertNotNil(station.temperature)
+    XCTAssertNotNil(station.latitude)
+    XCTAssertNotNil(station.longitude)
 
     XCTAssertNil(observations?.first(where: { $0.temperature == nil }))
   }

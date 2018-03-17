@@ -53,7 +53,8 @@ public struct LatvianRoadsStation: Codable {
         let doc: Document = try SwiftSoup.parse(part)
         let seperatedKeyValue = try doc.text().components(separatedBy: ":")
         
-        guard seperatedKeyValue.count == 2, let label = seperatedKeyValue.first, let value = seperatedKeyValue.last else {
+        guard seperatedKeyValue.count == 2,
+          let label = seperatedKeyValue.first, let value = seperatedKeyValue.last else {
           return nil
         }
         
