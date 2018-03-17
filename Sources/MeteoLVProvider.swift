@@ -3,6 +3,8 @@ import Foundation
 /// Meteo.lv observations provider
 public struct MeteoLVProvider {
   
+  public init() {}
+  
   /**
     Get observations from Latvian Environment, Geology and Meteorology Centre
    
