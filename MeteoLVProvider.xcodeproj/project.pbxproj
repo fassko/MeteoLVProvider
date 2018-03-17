@@ -13,7 +13,6 @@
 		631ABB06205D115C009A2F35 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB00205D115C009A2F35 /* Result.swift */; };
 		631ABB07205D115C009A2F35 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB01205D115C009A2F35 /* Station.swift */; };
 		631ABB13205D11A5009A2F35 /* MeteoLVProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631ABAE3205D10DC009A2F35 /* MeteoLVProvider.framework */; };
-		631ABB1A205D11B9009A2F35 /* MeteoLVProvider_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB19205D11B9009A2F35 /* MeteoLVProvider_ExampleTests.swift */; };
 		631ABB35205D1263009A2F35 /* ObservationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFC205D115C009A2F35 /* ObservationData.swift */; };
 		631ABB36205D1263009A2F35 /* MeteoLVProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */; };
 		631ABB37205D1263009A2F35 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFE205D115C009A2F35 /* Parameter.swift */; };
@@ -32,6 +31,7 @@
 		631ABB53205D1352009A2F35 /* Info-macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 631ABB52205D1352009A2F35 /* Info-macOS.plist */; };
 		631ABB55205D1357009A2F35 /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 631ABB54205D1357009A2F35 /* Info-tvOS.plist */; };
 		631ABB57205D1360009A2F35 /* Info-watchOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 631ABB56205D135F009A2F35 /* Info-watchOS.plist */; };
+		631ABB5A205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,6 @@
 		631ABB08205D118C009A2F35 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Sources/Info-iOS.plist"; sourceTree = "<group>"; };
 		631ABB0E205D11A5009A2F35 /* MeteoLVProvideriOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeteoLVProvideriOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		631ABB12205D11A5009A2F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		631ABB19205D11B9009A2F35 /* MeteoLVProvider_ExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeteoLVProvider_ExampleTests.swift; path = Example/MeteoLVProvider_ExampleTests/MeteoLVProvider_ExampleTests.swift; sourceTree = SOURCE_ROOT; };
 		631ABB20205D11F3009A2F35 /* MeteoLVProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeteoLVProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		631ABB2D205D125E009A2F35 /* MeteoLVProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeteoLVProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		631ABB44205D12B9009A2F35 /* MeteoLVProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeteoLVProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +61,7 @@
 		631ABB54205D1357009A2F35 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "Sources/Info-tvOS.plist"; sourceTree = "<group>"; };
 		631ABB56205D135F009A2F35 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-watchOS.plist"; path = "Sources/Info-watchOS.plist"; sourceTree = "<group>"; };
 		631ABB58205D13F8009A2F35 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoLVProvider_ExampleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 		631ABB0F205D11A5009A2F35 /* MeteoLVProvideriOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				631ABB19205D11B9009A2F35 /* MeteoLVProvider_ExampleTests.swift */,
+				631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */,
 				631ABB12205D11A5009A2F35 /* Info.plist */,
 			);
 			path = MeteoLVProvideriOSTests;
@@ -405,7 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				631ABB1A205D11B9009A2F35 /* MeteoLVProvider_ExampleTests.swift in Sources */,
+				631ABB5A205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

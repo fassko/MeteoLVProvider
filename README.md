@@ -7,6 +7,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/MeteoLVProvider.svg?style=flat)](http://cocoapods.org/pods/MeteoLVProvider)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![codecov](https://codecov.io/gh/fassko/MeteoLVProvider/branch/master/graph/badge.svg)](https://codecov.io/gh/fassko/MeteoLVProvider)
 
 ## Example
 
