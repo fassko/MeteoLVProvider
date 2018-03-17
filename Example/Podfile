@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'MeteoLVProvider_Example' do
   pod 'MeteoLVProvider', :path => '../'
-
-  target 'MeteoLVProvider_ExampleTests' do
-    inherit! :search_paths
-
-    
-  end
 end

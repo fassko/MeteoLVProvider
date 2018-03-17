@@ -1,0 +1,12 @@
+ignore:
+  - "Example"
+  - "MeteoLVProvideriOSTests"
+  - "fastlane"
+  - "docs"
+  - "Carthage"
+comment:
+  layout: "header, reach, diff, flags, files, footer"
+  behavior: default
+  require_changes: no
+  branches: null
+  paths: null

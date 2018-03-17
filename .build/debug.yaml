@@ -1,0 +1,30 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "main": ["<MeteoLVProvider.module>"]
+  "test": ["<MeteoLVProvider.module>"]
+  "MeteoLVProvider.module": ["<MeteoLVProvider.module>"]
+default: "main"
+commands: 
+  "<C.MeteoLVProvider.module>":
+    tool: phony
+    inputs: ["/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.swiftmodule"]
+    outputs: ["<MeteoLVProvider.module>"]
+
+  "C.MeteoLVProvider.module":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "MeteoLVProvider"
+    module-output-path: "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.swiftmodule"
+    inputs: ["/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/MeteoLVProvider.swift","/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/ObservationData.swift","/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Parameter.swift","/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Result.swift","/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Station.swift"]
+    outputs: ["/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/MeteoLVProvider.swift.o","/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/ObservationData.swift.o","/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Parameter.swift.o","/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Result.swift.o","/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Station.swift.o","/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.swiftmodule"]
+    import-paths: ["/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug"]
+    temps-path: "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build"
+    objects: ["/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/MeteoLVProvider.swift.o","/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/ObservationData.swift.o","/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Parameter.swift.o","/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Result.swift.o","/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Station.swift.o"]
+    other-args: ["-swift-version","4","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-module-cache-path","/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/ModuleCache"]
+    sources: ["/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/MeteoLVProvider.swift","/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/ObservationData.swift","/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Parameter.swift","/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Result.swift","/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Station.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
