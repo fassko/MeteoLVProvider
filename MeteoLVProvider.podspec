@@ -19,7 +19,7 @@ Observations providers from meteo.lv website.
 
   s.framework = 'Foundation'
 
-  s.source_files = 'Sources/*.swift'
+  s.source_files = 'Sources/**/*.swift'
 
   s.dependency 'SwiftSoup', '~> 1.6'
 
