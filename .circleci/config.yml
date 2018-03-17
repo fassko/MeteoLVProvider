@@ -30,11 +30,16 @@ jobs:
           command: carthage build --no-skip-current
 
       - run:
-          name: Build other platforms
-          command: |
-            set -o pipefail && xcodebuild -project MeteoLVProvider.xcodeproj -scheme MeteoLVProvider-tvOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build | xcpretty
-            set -o pipefail && xcodebuild -project MeteoLVProvider.xcodeproj -scheme MeteoLVProvider-watchOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build | xcpretty
-            set -o pipefail && xcodebuild -project MeteoLVProvider.xcodeproj -scheme MeteoLVProvider-macOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build | xcpretty
+          name: Build tvOS
+          command: set -o pipefail && xcodebuild -project MeteoLVProvider.xcodeproj -scheme MeteoLVProvider-tvOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build | xcpretty
+
+      - run:
+          name: Build watchOS
+          command: set -o pipefail && xcodebuild -project MeteoLVProvider.xcodeproj -scheme MeteoLVProvider-watchOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build | xcpretty
+
+      - run:
+          name: Build macOS
+          command: set -o pipefail && xcodebuild -project MeteoLVProvider.xcodeproj -scheme MeteoLVProvider-macOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build | xcpretty
 
       - run:
           name: Update pods
