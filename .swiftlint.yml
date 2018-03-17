@@ -12,3 +12,4 @@ reporter: "xcode"
 identifier_name:
   excluded:
     - id
+    - km
