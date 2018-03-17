@@ -1,0 +1,9 @@
+podspec: MeteoLVProvider.podspec
+author: Kristaps Grinbergs
+author_url: http://www.kristaps.me
+github_url: https://github.com/fassko/MeteoLVProvider
+copyright: "© 2017-2018 [Kristaps Grinbergs](http://www.kristaps.me/)"
+theme: apple
+output: docs
+clean: true
+documentation: docs/*.md

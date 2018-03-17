@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/master.swiftdeps"
+  },
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/MeteoLVProvider.swift": {
+    "dependencies": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/MeteoLVProvider.d",
+    "object": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/MeteoLVProvider.swift.o",
+    "swiftmodule": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/MeteoLVProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/MeteoLVProvider.swiftdeps"
+  },
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/ObservationData.swift": {
+    "dependencies": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/ObservationData.d",
+    "object": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/ObservationData.swift.o",
+    "swiftmodule": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/ObservationData~partial.swiftmodule",
+    "swift-dependencies": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/ObservationData.swiftdeps"
+  },
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Parameter.swift": {
+    "dependencies": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Parameter.d",
+    "object": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Parameter.swift.o",
+    "swiftmodule": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Parameter~partial.swiftmodule",
+    "swift-dependencies": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Parameter.swiftdeps"
+  },
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Result.swift": {
+    "dependencies": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Result.d",
+    "object": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Result.swift.o",
+    "swiftmodule": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Result~partial.swiftmodule",
+    "swift-dependencies": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Result.swiftdeps"
+  },
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Station.swift": {
+    "dependencies": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Station.d",
+    "object": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Station.swift.o",
+    "swiftmodule": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Station~partial.swiftmodule",
+    "swift-dependencies": "/Users/kristaps/Documents/ios/MeteoLVProvider/.build/x86_64-apple-macosx10.10/debug/MeteoLVProvider.build/Station.swiftdeps"
+  }
+}

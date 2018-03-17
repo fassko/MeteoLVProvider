@@ -1,0 +1,9 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "c8e6cf5f443cbcac6298f78819ed40da"
+build_time: [1521278218, 296816000]
+inputs:
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/MeteoLVProvider.swift": [1521277988, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/ObservationData.swift": [1520680147, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Parameter.swift": [1520680147, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Result.swift": [1521277988, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Station.swift": [1520680147, 0]
