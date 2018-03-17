@@ -3,7 +3,6 @@ language: objective-c
 before_install:
   - brew update
   - brew outdated carthage || brew upgrade carthage
-  - carthage update --platform iOS
   - brew outdated swiftlint || brew upgrade swiftlint
   - gem install cocoapods
 script:
@@ -12,5 +11,6 @@ script:
 - set -o pipefail && xcodebuild -project MeteoLVProvider.xcodeproj -scheme MeteoLVProvider-watchOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build | xcpretty
 - set -o pipefail && xcodebuild -project MeteoLVProvider.xcodeproj -scheme MeteoLVProvider-macOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build | xcpretty
 - swift build
+- carthage build --no-skip-current
 - pod repo update
 - pod lib lint --verbose
