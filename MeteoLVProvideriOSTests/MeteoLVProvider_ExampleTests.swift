@@ -57,8 +57,6 @@ class MeteoLVProvider_ExampleTests: XCTestCase {
     }
     
     XCTAssertNotNil(station.temperature)
-    XCTAssertNotNil(station.wind)
-    XCTAssertNotNil(station.humidity)
 
     XCTAssertNil(observations?.first(where: { $0.temperature == nil }))
   }

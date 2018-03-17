@@ -29,6 +29,10 @@
 		631ABB4F205D12EE009A2F35 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB00205D115C009A2F35 /* Result.swift */; };
 		631ABB50205D12EE009A2F35 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB01205D115C009A2F35 /* Station.swift */; };
 		631ABB5A205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */; };
+		635524E8205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */; };
+		635524E9205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */; };
+		635524EA205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */; };
+		635524EB205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */; };
 		637F7139205D655600865550 /* LatvianRoadsStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7138205D655600865550 /* LatvianRoadsStation.swift */; };
 		637F713A205D655600865550 /* LatvianRoadsStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7138205D655600865550 /* LatvianRoadsStation.swift */; };
 		637F713B205D655600865550 /* LatvianRoadsStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7138205D655600865550 /* LatvianRoadsStation.swift */; };
@@ -83,6 +87,7 @@
 		631ABB56205D135F009A2F35 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-watchOS.plist"; path = "Sources/Info-watchOS.plist"; sourceTree = "<group>"; };
 		631ABB58205D13F8009A2F35 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoLVProvider_ExampleTests.swift; sourceTree = "<group>"; };
+		635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadStationWeatherData.swift; sourceTree = "<group>"; };
 		637F7138205D655600865550 /* LatvianRoadsStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatvianRoadsStation.swift; sourceTree = "<group>"; };
 		637F713E205D660000865550 /* LatvianRoadsStationsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatvianRoadsStationsData.swift; sourceTree = "<group>"; };
 		637F7143205D686800865550 /* MeteoLVProvider.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MeteoLVProvider.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -194,6 +199,7 @@
 			children = (
 				637F713E205D660000865550 /* LatvianRoadsStationsData.swift */,
 				637F7138205D655600865550 /* LatvianRoadsStation.swift */,
+				635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */,
 				6382D587205DA46D00CAE2D4 /* Attributes.swift */,
 				6382D582205DA45000CAE2D4 /* Geometry.swift */,
 			);
@@ -574,6 +580,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635524E8205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */,
 				631ABB04205D115C009A2F35 /* Parameter.swift in Sources */,
 				631ABB07205D115C009A2F35 /* Station.swift in Sources */,
 				637F7139205D655600865550 /* LatvianRoadsStation.swift in Sources */,
@@ -599,6 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635524E9205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */,
 				631ABB37205D1263009A2F35 /* Parameter.swift in Sources */,
 				631ABB39205D1263009A2F35 /* Station.swift in Sources */,
 				637F713A205D655600865550 /* LatvianRoadsStation.swift in Sources */,
@@ -616,6 +624,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635524EA205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */,
 				631ABB3C205D1264009A2F35 /* Parameter.swift in Sources */,
 				631ABB3E205D1264009A2F35 /* Station.swift in Sources */,
 				637F713B205D655600865550 /* LatvianRoadsStation.swift in Sources */,
@@ -633,6 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635524EB205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */,
 				631ABB4E205D12EE009A2F35 /* Parameter.swift in Sources */,
 				631ABB50205D12EE009A2F35 /* Station.swift in Sources */,
 				637F713C205D655600865550 /* LatvianRoadsStation.swift in Sources */,

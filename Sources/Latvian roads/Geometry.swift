@@ -18,7 +18,7 @@ struct Geometry: Codable {
   public let longitude: Double
   
   enum CodingKeys: String, CodingKey {
-    case latitude = "x"
-    case longitude = "y"
+    case longitude = "x"
+    case latitude = "y"
   }
 }

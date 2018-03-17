@@ -38,19 +38,36 @@ public struct LatvianRoadsStation: Codable {
     return geometry.longitude
   }
   
-  /// Current temperature
   public var temperature: String? {
-    return weatherComponent(.temperature)
+    return weatherData.first?.value
   }
   
-  /// Current wind
-  public var wind: String? {
-    return weatherComponent(.wind)
-  }
-  
-  /// Current humidy
-  public var humidity: String? {
-    return weatherComponent(.humidity)
+  /// Current weather data
+  public var weatherData: [RoadStationWeatherData] {
+    do {
+      guard let parts = attributes.weather?.components(separatedBy: "<br/>") else {
+        return []
+      }
+      
+      let weatherData = try parts.flatMap({ part -> RoadStationWeatherData? in
+        let doc: Document = try SwiftSoup.parse(part)
+        let seperatedKeyValue = try doc.text().components(separatedBy: ":")
+        
+        guard seperatedKeyValue.count == 2, let label = seperatedKeyValue.first, let value = seperatedKeyValue.last else {
+          return nil
+        }
+        
+        return RoadStationWeatherData(
+          label: label,
+          value: value.trimmingCharacters(in: .whitespaces)
+        )
+      }).map({ $0 })
+      
+      return weatherData
+    } catch {
+      print("Can't parse weather data")
+      return []
+    }
   }
   
   /// Attributes
@@ -58,35 +75,4 @@ public struct LatvianRoadsStation: Codable {
   
   /// Geometry (coordinates)
   let geometry: Geometry
-  
-  private func weatherComponent(_ component: WeatherComponent) -> String? {
-    do {
-      guard let html = attributes.weather, html != " N/A " else {
-        return nil
-      }
-      
-      let doc: Document = try SwiftSoup.parse(html)
-      
-      let elements = try doc.select("font").array()
-      
-      switch component {
-      case .temperature:
-       return try elements[0].text()
-      case .wind:
-        return try elements[3].text()
-      case .humidity:
-        return try elements[3].text()
-      }
-    } catch {
-      print("Can't parse weather data")
-      return nil
-    }
-  }
-}
-
-/// Weaher component
-enum WeatherComponent {
-  case temperature
-  case wind
-  case humidity
 }
