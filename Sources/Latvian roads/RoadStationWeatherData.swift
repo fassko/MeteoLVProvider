@@ -8,7 +8,12 @@
 
 import Foundation
 
+/// Road station weaher data
 public struct RoadStationWeatherData {
+  
+  /// Label of weaher component
   public let label: String
+  
+  /// Value of weaher component
   public let value: String
 }

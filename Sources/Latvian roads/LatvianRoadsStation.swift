@@ -38,6 +38,7 @@ public struct LatvianRoadsStation: Codable {
     return geometry.longitude
   }
   
+  /// Current temperature
   public var temperature: String? {
     return weatherData.first?.value
   }

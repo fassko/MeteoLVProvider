@@ -3,6 +3,7 @@ import Foundation
 /// Meteo.lv observations provider
 public struct MeteoLVProvider {
   
+  /// Initialize MeteoLVProvider
   public init() {}
   
   /**
