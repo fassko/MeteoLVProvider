@@ -9,7 +9,7 @@
 import Foundation
 
 /// Latvian roads data container
-struct LatvianRoadsStationsData: Codable {
+public struct LatvianRoadsStationsData: Codable {
   
   /// Features or stations
   let features: [LatvianRoadsStation]
