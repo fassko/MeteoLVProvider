@@ -39,6 +39,11 @@
                BlueprintName = "MeteoLVProvideriOSTests"
                ReferencedContainer = "container:MeteoLVProvider.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "MeteoLVProvider_ExampleTests/testExample()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

@@ -21,4 +21,6 @@ Observations providers from meteo.lv website.
 
   s.source_files = 'Sources/*.swift'
 
+  s.dependency 'SwiftSoup', '~> 1.6'
+
 end

@@ -7,30 +7,60 @@
 //
 
 import XCTest
-import MeteoLVProvider
+
+@testable import MeteoLVProvider
 
 class MeteoLVProvider_ExampleTests: XCTestCase {
     
-    func testExample() {
-  
+  func testExample() {
+    
     let expectation = self.expectation(description: "observations")
     var observations: [Station]?
-  
-    MeteoLVProvider.observations { result in
+    
+    MeteoLVProvider().observations { result in
       switch result {
       case let .success(stations):
-        print(stations)
         observations = stations
         expectation.fulfill()
       case let .failure(error):
-        print(error)
-        XCTFail("Failed to get observations")
+        XCTFail("Failed to get observations \(error)")
       }
     }
     
     waitForExpectations(timeout: 5, handler: nil)
     
     XCTAssertNotNil(observations, "Should get observation data")
+  }
+  
+  func testLatvianRoads() {
+    
+    let expectation = self.expectation(description: "latvianRoads")
+    var observations: [LatvianRoadsStation]?
+    
+    MeteoLVProvider().latvianRoadsObservations { result in
+      switch result {
+      case let .success(stations):
+        observations = stations
+        expectation.fulfill()
+      case let .failure(error):
+        XCTFail("Failed to get observations \(error)")
+      }
+    }
+    
+    waitForExpectations(timeout: 5, handler: nil)
+    
+    XCTAssertNotNil(observations, "Should get observation data")
+    
+    guard let station = observations?.first else {
+      XCTFail("Failed to get station")
+      return
+    }
+    
+    XCTAssertNotNil(station.temperature)
+    XCTAssertNotNil(station.wind)
+    XCTAssertNotNil(station.humidity)
+
+    XCTAssertNil(observations?.first(where: { $0.temperature == nil }))
   }
     
 }
