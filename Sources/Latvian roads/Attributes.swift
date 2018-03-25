@@ -26,10 +26,10 @@ struct Attributes: Codable {
   let weather: String?
   
   enum CodingKeys: String, CodingKey {
-    case name = "nosaukums"
-    case id = "GISLVC.SDE_OWNER.CMS_XY.STATION"
-    case road = "acid"
-    case km
-    case weather = "CMS_STATUS"
+    case name = "LVC_CMS.dbo.view_cms_statuss.nosaukums"
+    case id = "GIS.DBO.LVC_CMS.STATION"
+    case road = "LVC_CMS.dbo.view_cms_statuss.acid"
+    case km = "LVC_CMS.dbo.view_cms_statuss.km"
+    case weather = "LVC_CMS.dbo.view_cms_statuss.CMS_STATUS"
   }
 }

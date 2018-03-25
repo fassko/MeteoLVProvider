@@ -1,0 +1,801 @@
+{
+  "displayFieldName": "GISLVC.SDE_OWNER.CMS_XY.NAME",
+  "fieldAliases": {
+    "nosaukums": "nosaukums",
+    "CMS_STATUS": "CMS_STATUS",
+    "GISLVC.SDE_OWNER.CMS_XY.STATION": "STATION",
+    "acid": "acid",
+    "km": "km"
+  },
+  "geometryType": "esriGeometryPoint",
+  "spatialReference": {
+    "wkid": 4326
+  },
+  "fields": [
+    {
+      "name": "nosaukums",
+      "type": "esriFieldTypeString",
+      "alias": "nosaukums",
+      "length": 20
+    },
+    {
+      "name": "CMS_STATUS",
+      "type": "esriFieldTypeString",
+      "alias": "CMS_STATUS",
+      "length": 485
+    },
+    {
+      "name": "GISLVC.SDE_OWNER.CMS_XY.STATION",
+      "type": "esriFieldTypeString",
+      "alias": "STATION",
+      "length": 50
+    },
+    {
+      "name": "acid",
+      "type": "esriFieldTypeString",
+      "alias": "acid",
+      "length": 4
+    },
+    {
+      "name": "km",
+      "type": "esriFieldTypeDouble",
+      "alias": "km"
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "nosaukums": "Kekava",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV04",
+        "acid": "A7",
+        "km": 19
+      },
+      "geometry": {
+        "x": 24.246944189000033,
+        "y": 56.81020010900005
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Bauska",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV05",
+        "acid": "A7",
+        "km": 81
+      },
+      "geometry": {
+        "x": 24.343729019000023,
+        "y": 56.29891989500004
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Sloka",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV06",
+        "acid": "A10",
+        "km": 36
+      },
+      "geometry": {
+        "x": 23.615015745000051,
+        "y": 56.92952174800007
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Dunte",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV07",
+        "acid": "A1",
+        "km": 45
+      },
+      "geometry": {
+        "x": 24.429135833000032,
+        "y": 57.38848467400004
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Vircava",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-4°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-3.8°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;56% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;2.5m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV08",
+        "acid": "A8",
+        "km": 43
+      },
+      "geometry": {
+        "x": 23.776330167000026,
+        "y": 56.640103507000049
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Inciems",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV09",
+        "acid": "A3",
+        "km": 24
+      },
+      "geometry": {
+        "x": 24.89493370100007,
+        "y": 57.274101300000041
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Melturi",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV10",
+        "acid": "A2",
+        "km": 76
+      },
+      "geometry": {
+        "x": 25.230751634000057,
+        "y": 57.221185521000052
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Kaibala",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV11",
+        "acid": "A6",
+        "km": 63
+      },
+      "geometry": {
+        "x": 24.898061333000044,
+        "y": 56.660750007000047
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Zarini",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV13",
+        "acid": "A7",
+        "km": 53
+      },
+      "geometry": {
+        "x": 24.172373414000049,
+        "y": 56.521331564000036
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Kalnciems",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV14",
+        "acid": "A9",
+        "km": 24
+      },
+      "geometry": {
+        "x": 23.576091528000063,
+        "y": 56.83598009800005
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Vitrupe",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-3.3°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-3.7°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;50% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;1.4m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV15",
+        "acid": "A1",
+        "km": 71
+      },
+      "geometry": {
+        "x": 24.387116167000045,
+        "y": 57.62169834000008
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Valmiera",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV16",
+        "acid": "A3",
+        "km": 62
+      },
+      "geometry": {
+        "x": 25.327102000000025,
+        "y": 57.503548007000063
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Strenci",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-5.2°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;57% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;0.3m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV17",
+        "acid": "A3",
+        "km": 102
+      },
+      "geometry": {
+        "x": 25.863773167000033,
+        "y": 57.65118800700003
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Smiltene",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-5.6°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-4.4°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;55% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;0.3m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV18",
+        "acid": "A2",
+        "km": 126
+      },
+      "geometry": {
+        "x": 25.973906167000052,
+        "y": 57.388053507000052
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Pure",
+        "CMS_STATUS": " <br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-0.5°C <\/font> <br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;1.7m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV19",
+        "acid": "A10",
+        "km": 80
+      },
+      "geometry": {
+        "x": 22.976910667000027,
+        "y": 57.01939417300008
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Pope",
+        "CMS_STATUS": " <br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-0.1°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;65% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;0.9m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV20",
+        "acid": "A10",
+        "km": 169
+      },
+      "geometry": {
+        "x": 21.849808666000058,
+        "y": 57.394400674000053
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Annenieki",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-5.1°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-1.9°C <\/font> <br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;1.1m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV21",
+        "acid": "A9",
+        "km": 62
+      },
+      "geometry": {
+        "x": 23.060806833000072,
+        "y": 56.667146007000042
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Saldus",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV22",
+        "acid": "A9",
+        "km": 113
+      },
+      "geometry": {
+        "x": 22.289840833000028,
+        "y": 56.671005507000075
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Rudbarži",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-4.4°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-3.3°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;44% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;1.4m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV23",
+        "acid": "A9",
+        "km": 138
+      },
+      "geometry": {
+        "x": 21.884590500000058,
+        "y": 56.64518750700006
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Admini",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-5.3°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-4.1°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;56% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;0.9m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV24",
+        "acid": "A6",
+        "km": 109
+      },
+      "geometry": {
+        "x": 25.546412667000027,
+        "y": 56.593066840000063
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Atašiene",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV25",
+        "acid": "A12",
+        "km": 38
+      },
+      "geometry": {
+        "x": 26.460586334000027,
+        "y": 56.521419840000078
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Rezekne",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-6.2°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-4.4°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;61% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;1.9m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV26",
+        "acid": "A12",
+        "km": 96
+      },
+      "geometry": {
+        "x": 27.299124334000055,
+        "y": 56.540103173000034
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Zilupe",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV27",
+        "acid": "A12",
+        "km": 155
+      },
+      "geometry": {
+        "x": 27.990572965000069,
+        "y": 56.397280463000072
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Livani",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV28",
+        "acid": "A6",
+        "km": 166
+      },
+      "geometry": {
+        "x": 26.072282667000025,
+        "y": 56.436492173000033
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Daugavpils",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV29",
+        "acid": "A6",
+        "km": 236
+      },
+      "geometry": {
+        "x": 26.643756667000048,
+        "y": 55.927552173000038
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Kraslava",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV30",
+        "acid": "A6",
+        "km": 280
+      },
+      "geometry": {
+        "x": 27.293286500000079,
+        "y": 55.897636506000026
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Jurmala",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV31",
+        "acid": "A10",
+        "km": 17
+      },
+      "geometry": {
+        "x": 23.900756836000028,
+        "y": 56.95821193900008
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Talsi",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV32",
+        "acid": "A10",
+        "km": 104
+      },
+      "geometry": {
+        "x": 22.690169666000031,
+        "y": 57.152236840000057
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Vireši",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV33",
+        "acid": "A2",
+        "km": 156
+      },
+      "geometry": {
+        "x": 26.442973167000048,
+        "y": 57.469187340000076
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Laci",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-3.8°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-2.4°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;58% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;2.4m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV35",
+        "acid": "A9",
+        "km": 13
+      },
+      "geometry": {
+        "x": 23.711839000000055,
+        "y": 56.894537507000052
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Kalvene",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-4.3°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-2.8°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;52% <\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV36",
+        "acid": "A9",
+        "km": 154
+      },
+      "geometry": {
+        "x": 21.662987833000045,
+        "y": 56.58939567300007
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Stalbe",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV37",
+        "acid": "A3",
+        "km": 41
+      },
+      "geometry": {
+        "x": 25.051188667000076,
+        "y": 57.378104674000042
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Garkalne",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV38",
+        "acid": "A2",
+        "km": 27
+      },
+      "geometry": {
+        "x": 24.489963055000032,
+        "y": 57.068759942000042
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Kemeri",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV39",
+        "acid": "A10",
+        "km": 45
+      },
+      "geometry": {
+        "x": 23.480888167000046,
+        "y": 56.932711673000028
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Adaži",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-3.2°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-2.7°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;54% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;0m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV41",
+        "acid": "A1",
+        "km": 9
+      },
+      "geometry": {
+        "x": 24.313340667000034,
+        "y": 57.090295840000067
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Dalbe",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV42",
+        "acid": "A8",
+        "km": 27
+      },
+      "geometry": {
+        "x": 23.89366300000006,
+        "y": 56.751065007000079
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Usma",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV43",
+        "acid": "A10",
+        "km": 138
+      },
+      "geometry": {
+        "x": 22.207484666000028,
+        "y": 57.236443340000051
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Skulte",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-3.6°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-3.8°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;48% <\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV44",
+        "acid": "A1",
+        "km": 32
+      },
+      "geometry": {
+        "x": 24.455463333000068,
+        "y": 57.334710674000064
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Apšupe",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV45",
+        "acid": "A9",
+        "km": 38
+      },
+      "geometry": {
+        "x": 23.364556500000049,
+        "y": 56.778654840000058
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Vilani",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV46",
+        "acid": "A12",
+        "km": 68
+      },
+      "geometry": {
+        "x": 26.874871667000036,
+        "y": 56.596581340000057
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Nica",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV47",
+        "acid": "A11",
+        "km": 37
+      },
+      "geometry": {
+        "x": 21.132888794000053,
+        "y": 56.214460766000059
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Karsava",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-6.1°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-4.1°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;63% <\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV48",
+        "acid": "A13",
+        "km": 10
+      },
+      "geometry": {
+        "x": 27.730951309000034,
+        "y": 56.802335179000067
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Rauna",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-6.6°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-3.5°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;54.6% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;0m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV50",
+        "acid": "A2",
+        "km": 102
+      },
+      "geometry": {
+        "x": 25.624365807000061,
+        "y": 57.307449112000029
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Berzini",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV51",
+        "acid": "A7",
+        "km": 32
+      },
+      "geometry": {
+        "x": 24.24163091500003,
+        "y": 56.693312247000051
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Apvedcelš",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV52",
+        "acid": "A5",
+        "km": 23
+      },
+      "geometry": {
+        "x": 24.019110692000027,
+        "y": 56.843610320000039
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Durbe",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-3.3°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-2.4°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;46% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;2.3m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV53",
+        "acid": "A9",
+        "km": 178
+      },
+      "geometry": {
+        "x": 21.292739175000065,
+        "y": 56.574807226000075
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Saulkalne",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV03",
+        "acid": "A6",
+        "km": 22
+      },
+      "geometry": {
+        "x": 24.410171330000026,
+        "y": 56.846376040000052
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Feimani",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-7.4°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-4.5°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;81% <\/font><br\/>Vejš:<font style=\"font-size:12px;\"><div class=\"wi wi-wind\"><\/div>&nbsp;0.8m\/s<\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV34",
+        "acid": "A13",
+        "km": 81
+      },
+      "geometry": {
+        "x": 27.074523178000049,
+        "y": 56.276744321000081
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Sigulda",
+        "CMS_STATUS": null,
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV02",
+        "acid": "A2",
+        "km": 58
+      },
+      "geometry": {
+        "x": 24.965690379000023,
+        "y": 57.168288507000057
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Lilaste",
+        "CMS_STATUS": " N\/A ",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV01",
+        "acid": "A1",
+        "km": 23
+      },
+      "geometry": {
+        "x": 24.362303280000049,
+        "y": 57.194534874000055
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Nicgale",
+        "CMS_STATUS": " Gaiss:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-4.5°C <\/font><br\/>Virsma:<font style=\"font-size:12px;\"><div class=\"wi wi-thermometer\"><\/div>&nbsp;-2.1°C <\/font> <br\/>Mitrums:<font style=\"font-size:12px;\"><div class=\"wi wi-humidity\"><\/div>&nbsp;56% <\/font>",
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV49",
+        "acid": "A6 ",
+        "km": 200
+      },
+      "geometry": {
+        "x": 26.339716174000046,
+        "y": 56.15700260300008
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Ogresgals",
+        "CMS_STATUS": null,
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV62",
+        "acid": "P80",
+        "km": 13
+      },
+      "geometry": {
+        "x": 24.758383064000043,
+        "y": 56.824706905000028
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Zadzene ",
+        "CMS_STATUS": null,
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV61",
+        "acid": "P80",
+        "km": 35
+      },
+      "geometry": {
+        "x": 25.118823817000077,
+        "y": 56.753389700000071
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Apvedcelš",
+        "CMS_STATUS": null,
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV99",
+        "acid": "A5",
+        "km": 40
+      },
+      "geometry": {
+        "x": 23.948240539000039,
+        "y": 56.960848956000063
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Eleja",
+        "CMS_STATUS": null,
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV12",
+        "acid": "A8",
+        "km": 75
+      },
+      "geometry": {
+        "x": 23.67671686400007,
+        "y": 56.380382076000046
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Olaine",
+        "CMS_STATUS": null,
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV95",
+        "acid": "A8",
+        "km": 26
+      },
+      "geometry": {
+        "x": 23.964703029000077,
+        "y": 56.791264428000034
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Blidene",
+        "CMS_STATUS": null,
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV54",
+        "acid": "A9",
+        "km": 86
+      },
+      "geometry": {
+        "x": 22.78889276700005,
+        "y": 56.647168671000031
+      }
+    },
+    {
+      "attributes": {
+        "nosaukums": "Edas",
+        "CMS_STATUS": null,
+        "GISLVC.SDE_OWNER.CMS_XY.STATION": "LV58",
+        "acid": "P108",
+        "km": 71
+      },
+      "geometry": {
+        "x": 22.110059579000051,
+        "y": 56.883679535000056
+      }
+    }
+  ]
+}
