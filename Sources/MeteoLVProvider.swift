@@ -35,12 +35,23 @@ public struct MeteoLVProvider {
      - completion: Completion block with Result type
   */
   public func latvianRoadsObservations(completion: @escaping (Result<[LatvianRoadsStation]>) -> Void) {
-    var urlComponents = URLComponents(string: "https://lvceli.lv/proxy/CMSPoint.ashx/0/query")
+    let urlString = "https://gispub.lvceli.lv/gispub/rest/services/GISPUB/SIC_CMSPoint/MapServer/0/query"
+    var urlComponents = URLComponents(string: urlString)
+    
+    let outFields = [
+      "LVC_CMS.dbo.view_cms_statuss.nosaukums",
+      "GIS.DBO.LVC_CMS.Y",
+      "GIS.DBO.LVC_CMS.X",
+      "LVC_CMS.dbo.view_cms_statuss.CMS_STATUS",
+      "GIS.DBO.LVC_CMS.STATION",
+      "LVC_CMS.dbo.view_cms_statuss.acid",
+      "LVC_CMS.dbo.view_cms_statuss.km"
+    ]
     
     urlComponents?.queryItems = [
       URLQueryItem(name: "where", value: "1=1"),
       URLQueryItem(name: "returnGeometry", value: "true"),
-      URLQueryItem(name: "outFields", value: "NOSAUKUMS,CMS_STATUS,GISLVC.SDE_OWNER.CMS_XY.STATION,acid,nosaukums,km"),
+      URLQueryItem(name: "outFields", value: outFields.joined(separator: ",")),
       URLQueryItem(name: "outSR", value: "4326"),
       URLQueryItem(name: "returnIdsOnly", value: "false"),
       URLQueryItem(name: "callback", value: ""),
