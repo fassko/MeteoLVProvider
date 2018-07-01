@@ -13,3 +13,5 @@ identifier_name:
   excluded:
     - id
     - km
+    - success(_:)
+    - failure(_:)
