@@ -32,7 +32,7 @@ class MeteoLVProvider_ExampleTests: XCTestCase {
     XCTAssertNotNil(observations, "Should get observation data")
   }
   
-  #warning ("Temporary disable because Latvian roads data is down")
+//  #warning ("Temporary disable because Latvian roads data is down")
 //  func testLatvianRoads() {
 //
 //    let expectation = self.expectation(description: "latvianRoads")
