@@ -1,9 +1,15 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "c8e6cf5f443cbcac6298f78819ed40da"
-build_time: [1521278218, 296816000]
+version: "Apple Swift version 4.2 (swiftlang-1000.0.16.9 clang-1000.10.25.3)"
+options: "00f12414f3b48f6ee160ef8226b7f41a"
+build_time: [1530470764, 594974000]
 inputs:
-  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/MeteoLVProvider.swift": [1521277988, 0]
-  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/ObservationData.swift": [1520680147, 0]
-  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Parameter.swift": [1520680147, 0]
-  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Result.swift": [1521277988, 0]
-  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Station.swift": [1520680147, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Latvian roads/Attributes.swift": [1521980898, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Latvian roads/Geometry.swift": [1521325408, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Latvian roads/LatvianRoadsStation.swift": [1530468520, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Latvian roads/LatvianRoadsStationsData.swift": [1521325408, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Latvian roads/RoadStationWeatherData.swift": [1521325408, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/MeteoLVError.swift": [1521325408, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/MeteoLVProvider.swift": [1521980898, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/ObservationData.swift": [1521290659, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Parameter.swift": [1521290659, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Result.swift": [1530468520, 0]
+  "/Users/kristaps/Documents/ios/MeteoLVProvider/Sources/Station.swift": [1521290659, 0]

@@ -17,7 +17,25 @@ platform :ios do
       commitish: "master"
     )
     sh("git fetch --tags")
-    pod_push(allow_warnings: true, verbose: true)
+    push
+  end
+
+  desc "Pod push"
+  lane :push do
+    pod_push(
+      allow_warnings: true,
+      verbose: true,
+      use_libraries: true
+    )
+  end
+
+  desc "Cocoapod linter"
+  lane :lint do
+    pod_lib_lint(
+      allow_warnings: true,
+      verbose: true,
+      use_libraries: true
+    )
   end
 
 end
