@@ -50,7 +50,7 @@ public struct LatvianRoadsStation: Codable {
         return []
       }
       
-      let weatherData = try parts.flatMap({ part -> RoadStationWeatherData? in
+      let weatherData = try parts.compactMap({ part -> RoadStationWeatherData? in
         let doc: Document = try SwiftSoup.parse(part)
         let seperatedKeyValue = try doc.text().components(separatedBy: ":")
         
