@@ -15,13 +15,13 @@ Observations providers from meteo.lv website.
   s.ios.deployment_target = '9.0'
   s.tvos.deployment_target = '10.0'
   s.osx.deployment_target = '10.12'
-  s.watchos.deployment_target = "3.0"
+  s.watchos.deployment_target = '3.0'
 
   s.framework = 'Foundation'
 
   s.source_files = 'Sources/**/*.swift'
 
-  s.dependency 'SwiftSoup', '~> 1.6'
+  s.dependency 'SwiftSoup', '~> 1.7'
   s.documentation_url = 'http://kristaps.me/MeteoLVProvider/'
 
 end

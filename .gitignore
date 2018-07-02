@@ -61,3 +61,16 @@ Carthage/Build
 
 
 # End of https://www.gitignore.io/api/carthage
+
+
+# Created by https://www.gitignore.io/api/swiftpm
+
+### SwiftPM ###
+Packages
+.build/
+xcuserdata
+DerivedData/
+*.xcodeproj
+
+
+# End of https://www.gitignore.io/api/swiftpm

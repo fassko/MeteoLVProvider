@@ -21,6 +21,16 @@ or alternatively using `brew cask install fastlane`
 fastlane ios release
 ```
 Depoy new Tartu Weather provider version
+### ios push
+```
+fastlane ios push
+```
+Pod push
+### ios lint
+```
+fastlane ios lint
+```
+Cocoapod linter
 
 ----
 
