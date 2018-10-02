@@ -27,10 +27,6 @@ jobs:
           command: swift build
 
       - run:
-          name: Carthage Build
-          command: carthage build --no-skip-current
-
-      - run:
           name: Build
           command: ./build.sh
 

@@ -9,6 +9,5 @@ before_install:
 script:
 - ./build.sh
 - swift build
-- carthage build --no-skip-current
 - pod repo update
 - pod lib lint --verbose
