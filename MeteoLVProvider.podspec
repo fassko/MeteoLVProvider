@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MeteoLVProvider'
-  s.version          = '0.1.3'
+  s.version          = '0.2.0'
   s.summary          = 'Observations providers from meteo.lv'
 
   s.description      = <<-DESC
@@ -23,5 +23,6 @@ Observations providers from meteo.lv website.
 
   s.dependency 'SwiftSoup', '~> 1.7'
   s.documentation_url = 'http://kristaps.me/MeteoLVProvider/'
+  s.swift_version = '4.2'
 
 end

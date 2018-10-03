@@ -2,7 +2,7 @@ version: 2
 jobs:
   build-and-test:
     macos:
-      xcode: "9.4.0"
+      xcode: "10.0.0"
 
     steps:
       - checkout
@@ -27,24 +27,14 @@ jobs:
           command: swift build
 
       - run:
-          name: Carthage Build
-          command: carthage build --no-skip-current
-
-      - run:
-          name: Build tvOS
-          command: set -o pipefail && xcodebuild -project MeteoLVProvider.xcodeproj -scheme MeteoLVProvider-tvOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build | xcpretty
-
-      - run:
-          name: Build watchOS
-          command: set -o pipefail && xcodebuild -project MeteoLVProvider.xcodeproj -scheme MeteoLVProvider-watchOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build | xcpretty
-
-      - run:
-          name: Build macOS
-          command: set -o pipefail && xcodebuild -project MeteoLVProvider.xcodeproj -scheme MeteoLVProvider-macOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build | xcpretty
+          name: Build
+          command: ./build.sh
 
       - run:
           name: Update pods
           command: |
+            sudo gem install cocoapods --pre
+            sudo gem cleanup
             curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
 
       - run:
