@@ -4,6 +4,12 @@ import PlaygroundSupport
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 
-MeteoLVProvider.latvianRoadsObservations { result in
-  print(result)
+let meteoLVProvider = MeteoLVProvider()
+
+meteoLVProvider.latvianRoadsObservations {
+  print($0)
+}
+
+meteoLVProvider.observations {
+  print($0)
 }
