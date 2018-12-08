@@ -32,39 +32,38 @@ class MeteoLVProvider_ExampleTests: XCTestCase {
     XCTAssertNotNil(observations, "Should get observation data")
   }
   
-//  #warning ("Temporary disable because Latvian roads data is down")
-//  func testLatvianRoads() {
-//
-//    let expectation = self.expectation(description: "latvianRoads")
-//    var observations: [LatvianRoadsStation]?
-//
-//    MeteoLVProvider().latvianRoadsObservations { result in
-//      switch result {
-//      case let .success(stations):
-//        observations = stations
-//        expectation.fulfill()
-//      case let .failure(error):
-//        XCTFail("Failed to get observations \(error)")
-//      }
-//    }
-//
-//    waitForExpectations(timeout: 5, handler: nil)
-//
-//    XCTAssertNotNil(observations, "Should get observation data")
-//
-//    guard let station = observations?.first else {
-//      XCTFail("Failed to get station")
-//      return
-//    }
-//
-//    XCTAssertNotNil(station.name)
-//    XCTAssertNotNil(station.road)
-//    XCTAssertNotNil(station.km)
-//    XCTAssertNotNil(station.temperature)
-//    XCTAssertNotNil(station.latitude)
-//    XCTAssertNotNil(station.longitude)
-//
-//    XCTAssertNil(observations?.first(where: { $0.temperature == nil }))
-//  }
+  func testLatvianRoads() {
+
+    let expectation = self.expectation(description: "latvianRoads")
+    var observations: [LatvianRoadsStation]?
+
+    MeteoLVProvider().latvianRoadsObservations { result in
+      switch result {
+      case let .success(stations):
+        observations = stations
+        expectation.fulfill()
+      case let .failure(error):
+        XCTFail("Failed to get observations \(error)")
+      }
+    }
+
+    waitForExpectations(timeout: 5, handler: nil)
+
+    XCTAssertNotNil(observations, "Should get observation data")
+
+    guard let station = observations?.first else {
+      XCTFail("Failed to get station")
+      return
+    }
+
+    XCTAssertNotNil(station.name)
+    XCTAssertNotNil(station.road)
+    XCTAssertNotNil(station.km)
+    XCTAssertNotNil(station.temperature)
+    XCTAssertNotNil(station.latitude)
+    XCTAssertNotNil(station.longitude)
+
+    XCTAssertNil(observations?.first(where: { $0.temperature == nil }))
+  }
   
 }
