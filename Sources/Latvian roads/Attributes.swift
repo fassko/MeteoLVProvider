@@ -20,7 +20,7 @@ struct Attributes: Codable {
   let road: String
   
   /// Km on the road
-  let km: Int
+  let km: Double
   
   /// Weather html data
   let weather: String?
