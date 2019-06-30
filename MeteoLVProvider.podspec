@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MeteoLVProvider'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'Observations providers from meteo.lv'
 
   s.description      = <<-DESC

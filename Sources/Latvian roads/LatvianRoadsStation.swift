@@ -24,7 +24,7 @@ public struct LatvianRoadsStation: Codable {
   }
   
   /// Km on the road
-  public var km: Int {
+  public var km: Double {
     return attributes.km
   }
   
