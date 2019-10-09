@@ -13,50 +13,14 @@
 		631ABB06205D115C009A2F35 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB00205D115C009A2F35 /* Result.swift */; };
 		631ABB07205D115C009A2F35 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB01205D115C009A2F35 /* Station.swift */; };
 		631ABB13205D11A5009A2F35 /* MeteoLVProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631ABAE3205D10DC009A2F35 /* MeteoLVProvider.framework */; };
-		631ABB35205D1263009A2F35 /* ObservationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFC205D115C009A2F35 /* ObservationData.swift */; };
-		631ABB36205D1263009A2F35 /* MeteoLVProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */; };
-		631ABB37205D1263009A2F35 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFE205D115C009A2F35 /* Parameter.swift */; };
-		631ABB38205D1263009A2F35 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB00205D115C009A2F35 /* Result.swift */; };
-		631ABB39205D1263009A2F35 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB01205D115C009A2F35 /* Station.swift */; };
-		631ABB3A205D1264009A2F35 /* ObservationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFC205D115C009A2F35 /* ObservationData.swift */; };
-		631ABB3B205D1264009A2F35 /* MeteoLVProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */; };
-		631ABB3C205D1264009A2F35 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFE205D115C009A2F35 /* Parameter.swift */; };
-		631ABB3D205D1264009A2F35 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB00205D115C009A2F35 /* Result.swift */; };
-		631ABB3E205D1264009A2F35 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB01205D115C009A2F35 /* Station.swift */; };
-		631ABB4C205D12EE009A2F35 /* ObservationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFC205D115C009A2F35 /* ObservationData.swift */; };
-		631ABB4D205D12EE009A2F35 /* MeteoLVProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */; };
-		631ABB4E205D12EE009A2F35 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFE205D115C009A2F35 /* Parameter.swift */; };
-		631ABB4F205D12EE009A2F35 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB00205D115C009A2F35 /* Result.swift */; };
-		631ABB50205D12EE009A2F35 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB01205D115C009A2F35 /* Station.swift */; };
 		631ABB5A205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */; };
 		635524E8205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */; };
-		635524E9205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */; };
-		635524EA205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */; };
-		635524EB205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */; };
 		637F7139205D655600865550 /* LatvianRoadsStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7138205D655600865550 /* LatvianRoadsStation.swift */; };
-		637F713A205D655600865550 /* LatvianRoadsStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7138205D655600865550 /* LatvianRoadsStation.swift */; };
-		637F713B205D655600865550 /* LatvianRoadsStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7138205D655600865550 /* LatvianRoadsStation.swift */; };
-		637F713C205D655600865550 /* LatvianRoadsStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7138205D655600865550 /* LatvianRoadsStation.swift */; };
 		637F713F205D660000865550 /* LatvianRoadsStationsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F713E205D660000865550 /* LatvianRoadsStationsData.swift */; };
-		637F7140205D660000865550 /* LatvianRoadsStationsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F713E205D660000865550 /* LatvianRoadsStationsData.swift */; };
-		637F7141205D660000865550 /* LatvianRoadsStationsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F713E205D660000865550 /* LatvianRoadsStationsData.swift */; };
-		637F7142205D660000865550 /* LatvianRoadsStationsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F713E205D660000865550 /* LatvianRoadsStationsData.swift */; };
 		637F714A205D75B500865550 /* MeteoLVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7149205D75B500865550 /* MeteoLVError.swift */; };
-		637F714B205D75B500865550 /* MeteoLVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7149205D75B500865550 /* MeteoLVError.swift */; };
-		637F714C205D75B500865550 /* MeteoLVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7149205D75B500865550 /* MeteoLVError.swift */; };
-		637F714D205D75B500865550 /* MeteoLVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7149205D75B500865550 /* MeteoLVError.swift */; };
 		6382D583205DA45000CAE2D4 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D582205DA45000CAE2D4 /* Geometry.swift */; };
-		6382D584205DA45000CAE2D4 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D582205DA45000CAE2D4 /* Geometry.swift */; };
-		6382D585205DA45000CAE2D4 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D582205DA45000CAE2D4 /* Geometry.swift */; };
-		6382D586205DA45000CAE2D4 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D582205DA45000CAE2D4 /* Geometry.swift */; };
 		6382D588205DA46D00CAE2D4 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D587205DA46D00CAE2D4 /* Attributes.swift */; };
-		6382D589205DA46D00CAE2D4 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D587205DA46D00CAE2D4 /* Attributes.swift */; };
-		6382D58A205DA46D00CAE2D4 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D587205DA46D00CAE2D4 /* Attributes.swift */; };
-		6382D58B205DA46D00CAE2D4 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D587205DA46D00CAE2D4 /* Attributes.swift */; };
 		63EC0543234E35A400879866 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 63EC0542234E35A400879866 /* SwiftSoup */; };
-		63EC0545234E360400879866 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 63EC0544234E360400879866 /* SwiftSoup */; };
-		63EC0547234E360B00879866 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 63EC0546234E360B00879866 /* SwiftSoup */; };
-		63EC0549234E361100879866 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 63EC0548234E361100879866 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,11 +41,8 @@
 		631ABB00205D115C009A2F35 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		631ABB01205D115C009A2F35 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		631ABB08205D118C009A2F35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
-		631ABB0E205D11A5009A2F35 /* MeteoLVProvideriOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeteoLVProvideriOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		631ABB0E205D11A5009A2F35 /* MeteoLVProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeteoLVProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		631ABB12205D11A5009A2F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		631ABB20205D11F3009A2F35 /* MeteoLVProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeteoLVProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		631ABB2D205D125E009A2F35 /* MeteoLVProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeteoLVProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		631ABB44205D12B9009A2F35 /* MeteoLVProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeteoLVProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		631ABB58205D13F8009A2F35 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoLVProvider_ExampleTests.swift; sourceTree = "<group>"; };
 		635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadStationWeatherData.swift; sourceTree = "<group>"; };
@@ -96,6 +57,7 @@
 		6382D580205DA2D200CAE2D4 /* SwiftSoup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSoup.framework; path = Carthage/Build/tvOS/SwiftSoup.framework; sourceTree = "<group>"; };
 		6382D582205DA45000CAE2D4 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		6382D587205DA46D00CAE2D4 /* Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
+		63EC054C234E3A3400879866 /* MeteoLVProvider.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MeteoLVProvider.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,41 +77,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		631ABB1C205D11F3009A2F35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63EC0549234E361100879866 /* SwiftSoup in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		631ABB29205D125E009A2F35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63EC0547234E360B00879866 /* SwiftSoup in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		631ABB40205D12B9009A2F35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63EC0545234E360400879866 /* SwiftSoup in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		631ABAD9205D10DC009A2F35 = {
 			isa = PBXGroup;
 			children = (
+				63EC054C234E3A3400879866 /* MeteoLVProvider.xctestplan */,
 				637F7143205D686800865550 /* MeteoLVProvider.playground */,
 				631ABB58205D13F8009A2F35 /* README.md */,
 				631ABB08205D118C009A2F35 /* Info.plist */,
 				631ABAFB205D115C009A2F35 /* Sources */,
-				631ABB0F205D11A5009A2F35 /* MeteoLVProvideriOSTests */,
+				631ABB0F205D11A5009A2F35 /* MeteoLVProviderTests */,
 				631ABAE4205D10DC009A2F35 /* Products */,
 				637F7150205D8DC900865550 /* Frameworks */,
 			);
@@ -159,10 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				631ABAE3205D10DC009A2F35 /* MeteoLVProvider.framework */,
-				631ABB0E205D11A5009A2F35 /* MeteoLVProvideriOSTests.xctest */,
-				631ABB20205D11F3009A2F35 /* MeteoLVProvider.framework */,
-				631ABB2D205D125E009A2F35 /* MeteoLVProvider.framework */,
-				631ABB44205D12B9009A2F35 /* MeteoLVProvider.framework */,
+				631ABB0E205D11A5009A2F35 /* MeteoLVProviderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,13 +115,13 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		631ABB0F205D11A5009A2F35 /* MeteoLVProvideriOSTests */ = {
+		631ABB0F205D11A5009A2F35 /* MeteoLVProviderTests */ = {
 			isa = PBXGroup;
 			children = (
 				631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */,
 				631ABB12205D11A5009A2F35 /* Info.plist */,
 			);
-			path = MeteoLVProvideriOSTests;
+			path = MeteoLVProviderTests;
 			sourceTree = "<group>";
 		};
 		637F713D205D65E500865550 /* Latvian roads */ = {
@@ -232,33 +168,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		631ABB1D205D11F3009A2F35 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		631ABB2A205D125E009A2F35 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		631ABB41205D12B9009A2F35 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		631ABAE2205D10DC009A2F35 /* MeteoLVProvider-iOS */ = {
+		631ABAE2205D10DC009A2F35 /* MeteoLVProvider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 631ABAEB205D10DC009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvider-iOS" */;
+			buildConfigurationList = 631ABAEB205D10DC009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvider" */;
 			buildPhases = (
 				631ABADE205D10DC009A2F35 /* Sources */,
 				631ABADF205D10DC009A2F35 /* Frameworks */,
@@ -270,7 +185,7 @@
 			);
 			dependencies = (
 			);
-			name = "MeteoLVProvider-iOS";
+			name = MeteoLVProvider;
 			packageProductDependencies = (
 				63EC0542234E35A400879866 /* SwiftSoup */,
 			);
@@ -278,9 +193,9 @@
 			productReference = 631ABAE3205D10DC009A2F35 /* MeteoLVProvider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		631ABB0D205D11A5009A2F35 /* MeteoLVProvideriOSTests */ = {
+		631ABB0D205D11A5009A2F35 /* MeteoLVProviderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 631ABB16205D11A5009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvideriOSTests" */;
+			buildConfigurationList = 631ABB16205D11A5009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProviderTests" */;
 			buildPhases = (
 				631ABB0A205D11A5009A2F35 /* Sources */,
 				631ABB0B205D11A5009A2F35 /* Frameworks */,
@@ -291,76 +206,10 @@
 			dependencies = (
 				631ABB15205D11A5009A2F35 /* PBXTargetDependency */,
 			);
-			name = MeteoLVProvideriOSTests;
+			name = MeteoLVProviderTests;
 			productName = MeteoLVProvideriOSTests;
-			productReference = 631ABB0E205D11A5009A2F35 /* MeteoLVProvideriOSTests.xctest */;
+			productReference = 631ABB0E205D11A5009A2F35 /* MeteoLVProviderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		631ABB1F205D11F3009A2F35 /* MeteoLVProvider-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 631ABB25205D11F3009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvider-watchOS" */;
-			buildPhases = (
-				631ABB1B205D11F3009A2F35 /* Sources */,
-				631ABB1C205D11F3009A2F35 /* Frameworks */,
-				631ABB1D205D11F3009A2F35 /* Headers */,
-				631ABB1E205D11F3009A2F35 /* Resources */,
-				6382D575205DA10600CAE2D4 /* Swiftlint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MeteoLVProvider-watchOS";
-			packageProductDependencies = (
-				63EC0548234E361100879866 /* SwiftSoup */,
-			);
-			productName = "MeteoLVProvider-watchOS";
-			productReference = 631ABB20205D11F3009A2F35 /* MeteoLVProvider.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		631ABB2C205D125E009A2F35 /* MeteoLVProvider-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 631ABB32205D125E009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvider-tvOS" */;
-			buildPhases = (
-				631ABB28205D125E009A2F35 /* Sources */,
-				631ABB29205D125E009A2F35 /* Frameworks */,
-				631ABB2A205D125E009A2F35 /* Headers */,
-				631ABB2B205D125E009A2F35 /* Resources */,
-				6382D576205DA11300CAE2D4 /* Swiftlint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MeteoLVProvider-tvOS";
-			packageProductDependencies = (
-				63EC0546234E360B00879866 /* SwiftSoup */,
-			);
-			productName = "MeteoLVProvider-tvOS";
-			productReference = 631ABB2D205D125E009A2F35 /* MeteoLVProvider.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		631ABB43205D12B9009A2F35 /* MeteoLVProvider-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 631ABB49205D12B9009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvider-macOS" */;
-			buildPhases = (
-				631ABB3F205D12B9009A2F35 /* Sources */,
-				631ABB40205D12B9009A2F35 /* Frameworks */,
-				631ABB41205D12B9009A2F35 /* Headers */,
-				631ABB42205D12B9009A2F35 /* Resources */,
-				6382D577205DA12700CAE2D4 /* Swiftlint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MeteoLVProvider-macOS";
-			packageProductDependencies = (
-				63EC0544234E360400879866 /* SwiftSoup */,
-			);
-			productName = "MeteoLVProvider-macOS";
-			productReference = 631ABB44205D12B9009A2F35 /* MeteoLVProvider.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -382,18 +231,6 @@
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
-					631ABB1F205D11F3009A2F35 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					631ABB2C205D125E009A2F35 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					631ABB43205D12B9009A2F35 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = 631ABADD205D10DC009A2F35 /* Build configuration list for PBXProject "MeteoLVProvider" */;
@@ -412,11 +249,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				631ABAE2205D10DC009A2F35 /* MeteoLVProvider-iOS */,
-				631ABB1F205D11F3009A2F35 /* MeteoLVProvider-watchOS */,
-				631ABB2C205D125E009A2F35 /* MeteoLVProvider-tvOS */,
-				631ABB43205D12B9009A2F35 /* MeteoLVProvider-macOS */,
-				631ABB0D205D11A5009A2F35 /* MeteoLVProvideriOSTests */,
+				631ABAE2205D10DC009A2F35 /* MeteoLVProvider */,
+				631ABB0D205D11A5009A2F35 /* MeteoLVProviderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -430,27 +264,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		631ABB0C205D11A5009A2F35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		631ABB1E205D11F3009A2F35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		631ABB2B205D125E009A2F35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		631ABB42205D12B9009A2F35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -472,49 +285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		6382D575205DA10600CAE2D4 /* Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Swiftlint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		6382D576205DA11300CAE2D4 /* Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Swiftlint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		6382D577205DA12700CAE2D4 /* Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Swiftlint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -545,66 +316,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		631ABB1B205D11F3009A2F35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				635524E9205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */,
-				631ABB37205D1263009A2F35 /* Parameter.swift in Sources */,
-				631ABB39205D1263009A2F35 /* Station.swift in Sources */,
-				637F713A205D655600865550 /* LatvianRoadsStation.swift in Sources */,
-				637F7140205D660000865550 /* LatvianRoadsStationsData.swift in Sources */,
-				631ABB35205D1263009A2F35 /* ObservationData.swift in Sources */,
-				631ABB38205D1263009A2F35 /* Result.swift in Sources */,
-				637F714B205D75B500865550 /* MeteoLVError.swift in Sources */,
-				6382D584205DA45000CAE2D4 /* Geometry.swift in Sources */,
-				6382D589205DA46D00CAE2D4 /* Attributes.swift in Sources */,
-				631ABB36205D1263009A2F35 /* MeteoLVProvider.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		631ABB28205D125E009A2F35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				635524EA205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */,
-				631ABB3C205D1264009A2F35 /* Parameter.swift in Sources */,
-				631ABB3E205D1264009A2F35 /* Station.swift in Sources */,
-				637F713B205D655600865550 /* LatvianRoadsStation.swift in Sources */,
-				637F7141205D660000865550 /* LatvianRoadsStationsData.swift in Sources */,
-				631ABB3A205D1264009A2F35 /* ObservationData.swift in Sources */,
-				631ABB3D205D1264009A2F35 /* Result.swift in Sources */,
-				637F714C205D75B500865550 /* MeteoLVError.swift in Sources */,
-				6382D585205DA45000CAE2D4 /* Geometry.swift in Sources */,
-				6382D58A205DA46D00CAE2D4 /* Attributes.swift in Sources */,
-				631ABB3B205D1264009A2F35 /* MeteoLVProvider.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		631ABB3F205D12B9009A2F35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				635524EB205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */,
-				631ABB4E205D12EE009A2F35 /* Parameter.swift in Sources */,
-				631ABB50205D12EE009A2F35 /* Station.swift in Sources */,
-				637F713C205D655600865550 /* LatvianRoadsStation.swift in Sources */,
-				637F7142205D660000865550 /* LatvianRoadsStationsData.swift in Sources */,
-				631ABB4C205D12EE009A2F35 /* ObservationData.swift in Sources */,
-				631ABB4F205D12EE009A2F35 /* Result.swift in Sources */,
-				637F714D205D75B500865550 /* MeteoLVError.swift in Sources */,
-				6382D586205DA45000CAE2D4 /* Geometry.swift in Sources */,
-				6382D58B205DA46D00CAE2D4 /* Attributes.swift in Sources */,
-				631ABB4D205D12EE009A2F35 /* MeteoLVProvider.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		631ABB15205D11A5009A2F35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 631ABAE2205D10DC009A2F35 /* MeteoLVProvider-iOS */;
+			target = 631ABAE2205D10DC009A2F35 /* MeteoLVProvider */;
 			targetProxy = 631ABB14205D11A5009A2F35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -751,6 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.MeteoLVProvider;
 				PRODUCT_NAME = MeteoLVProvider;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchsimulator watchos appletvsimulator appletvos macosx";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -777,6 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.MeteoLVProvider;
 				PRODUCT_NAME = MeteoLVProvider;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchsimulator watchos appletvsimulator appletvos macosx";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -788,13 +507,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SGNZQGS68;
-				INFOPLIST_FILE = MeteoLVProvideriOSTests/Info.plist;
+				INFOPLIST_FILE = MeteoLVProviderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.MeteoLVProvideriOSTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.MeteoLVProviderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -808,188 +527,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SGNZQGS68;
-				INFOPLIST_FILE = MeteoLVProvideriOSTests/Info.plist;
+				INFOPLIST_FILE = MeteoLVProviderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.MeteoLVProvideriOSTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.MeteoLVProviderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		631ABB26205D11F3009A2F35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3SGNZQGS68;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-watchOS";
-				PRODUCT_NAME = MeteoLVProvider;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
-			};
-			name = Debug;
-		};
-		631ABB27205D11F3009A2F35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3SGNZQGS68;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-watchOS";
-				PRODUCT_NAME = MeteoLVProvider;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
-			};
-			name = Release;
-		};
-		631ABB33205D125E009A2F35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3SGNZQGS68;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-tvOS";
-				PRODUCT_NAME = MeteoLVProvider;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.2;
-			};
-			name = Debug;
-		};
-		631ABB34205D125E009A2F35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3SGNZQGS68;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-tvOS";
-				PRODUCT_NAME = MeteoLVProvider;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.2;
-			};
-			name = Release;
-		};
-		631ABB4A205D12B9009A2F35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3SGNZQGS68;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-macOS";
-				PRODUCT_NAME = MeteoLVProvider;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		631ABB4B205D12B9009A2F35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3SGNZQGS68;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-macOS";
-				PRODUCT_NAME = MeteoLVProvider;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1005,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		631ABAEB205D10DC009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvider-iOS" */ = {
+		631ABAEB205D10DC009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				631ABAEC205D10DC009A2F35 /* Debug */,
@@ -1014,38 +561,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		631ABB16205D11A5009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvideriOSTests" */ = {
+		631ABB16205D11A5009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProviderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				631ABB17205D11A5009A2F35 /* Debug */,
 				631ABB18205D11A5009A2F35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		631ABB25205D11F3009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvider-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				631ABB26205D11F3009A2F35 /* Debug */,
-				631ABB27205D11F3009A2F35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		631ABB32205D125E009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvider-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				631ABB33205D125E009A2F35 /* Debug */,
-				631ABB34205D125E009A2F35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		631ABB49205D12B9009A2F35 /* Build configuration list for PBXNativeTarget "MeteoLVProvider-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				631ABB4A205D12B9009A2F35 /* Debug */,
-				631ABB4B205D12B9009A2F35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1065,21 +585,6 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		63EC0542234E35A400879866 /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 63EC0541234E35A400879866 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
-		};
-		63EC0544234E360400879866 /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 63EC0541234E35A400879866 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
-		};
-		63EC0546234E360B00879866 /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 63EC0541234E35A400879866 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
-		};
-		63EC0548234E361100879866 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 63EC0541234E35A400879866 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
