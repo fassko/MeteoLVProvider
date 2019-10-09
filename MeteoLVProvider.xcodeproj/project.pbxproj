@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,10 +45,6 @@
 		637F714B205D75B500865550 /* MeteoLVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7149205D75B500865550 /* MeteoLVError.swift */; };
 		637F714C205D75B500865550 /* MeteoLVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7149205D75B500865550 /* MeteoLVError.swift */; };
 		637F714D205D75B500865550 /* MeteoLVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7149205D75B500865550 /* MeteoLVError.swift */; };
-		637F7152205D8DC900865550 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637F7151205D8DC900865550 /* SwiftSoup.framework */; };
-		6382D57D205DA20500CAE2D4 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6382D57C205DA20500CAE2D4 /* SwiftSoup.framework */; };
-		6382D57F205DA24900CAE2D4 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6382D57E205DA24900CAE2D4 /* SwiftSoup.framework */; };
-		6382D581205DA2D200CAE2D4 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6382D580205DA2D200CAE2D4 /* SwiftSoup.framework */; };
 		6382D583205DA45000CAE2D4 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D582205DA45000CAE2D4 /* Geometry.swift */; };
 		6382D584205DA45000CAE2D4 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D582205DA45000CAE2D4 /* Geometry.swift */; };
 		6382D585205DA45000CAE2D4 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D582205DA45000CAE2D4 /* Geometry.swift */; };
@@ -57,6 +53,10 @@
 		6382D589205DA46D00CAE2D4 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D587205DA46D00CAE2D4 /* Attributes.swift */; };
 		6382D58A205DA46D00CAE2D4 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D587205DA46D00CAE2D4 /* Attributes.swift */; };
 		6382D58B205DA46D00CAE2D4 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D587205DA46D00CAE2D4 /* Attributes.swift */; };
+		63EC0543234E35A400879866 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 63EC0542234E35A400879866 /* SwiftSoup */; };
+		63EC0545234E360400879866 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 63EC0544234E360400879866 /* SwiftSoup */; };
+		63EC0547234E360B00879866 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 63EC0546234E360B00879866 /* SwiftSoup */; };
+		63EC0549234E361100879866 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 63EC0548234E361100879866 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				637F7152205D8DC900865550 /* SwiftSoup.framework in Frameworks */,
+				63EC0543234E35A400879866 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6382D57D205DA20500CAE2D4 /* SwiftSoup.framework in Frameworks */,
+				63EC0549234E361100879866 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6382D581205DA2D200CAE2D4 /* SwiftSoup.framework in Frameworks */,
+				63EC0547234E360B00879866 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6382D57F205DA24900CAE2D4 /* SwiftSoup.framework in Frameworks */,
+				63EC0545234E360400879866 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,13 +265,15 @@
 				631ABAE0205D10DC009A2F35 /* Headers */,
 				631ABAE1205D10DC009A2F35 /* Resources */,
 				631ABB51205D12FE009A2F35 /* Swiftlint */,
-				637F714F205D8D9800865550 /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "MeteoLVProvider-iOS";
+			packageProductDependencies = (
+				63EC0542234E35A400879866 /* SwiftSoup */,
+			);
 			productName = MeteoLVProvider;
 			productReference = 631ABAE3205D10DC009A2F35 /* MeteoLVProvider.framework */;
 			productType = "com.apple.product-type.framework";
@@ -303,13 +305,15 @@
 				631ABB1D205D11F3009A2F35 /* Headers */,
 				631ABB1E205D11F3009A2F35 /* Resources */,
 				6382D575205DA10600CAE2D4 /* Swiftlint */,
-				637F7154205DA0D100865550 /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "MeteoLVProvider-watchOS";
+			packageProductDependencies = (
+				63EC0548234E361100879866 /* SwiftSoup */,
+			);
 			productName = "MeteoLVProvider-watchOS";
 			productReference = 631ABB20205D11F3009A2F35 /* MeteoLVProvider.framework */;
 			productType = "com.apple.product-type.framework";
@@ -323,13 +327,15 @@
 				631ABB2A205D125E009A2F35 /* Headers */,
 				631ABB2B205D125E009A2F35 /* Resources */,
 				6382D576205DA11300CAE2D4 /* Swiftlint */,
-				6382D57A205DA1B200CAE2D4 /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "MeteoLVProvider-tvOS";
+			packageProductDependencies = (
+				63EC0546234E360B00879866 /* SwiftSoup */,
+			);
 			productName = "MeteoLVProvider-tvOS";
 			productReference = 631ABB2D205D125E009A2F35 /* MeteoLVProvider.framework */;
 			productType = "com.apple.product-type.framework";
@@ -343,13 +349,15 @@
 				631ABB41205D12B9009A2F35 /* Headers */,
 				631ABB42205D12B9009A2F35 /* Resources */,
 				6382D577205DA12700CAE2D4 /* Swiftlint */,
-				6382D57B205DA1CC00CAE2D4 /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "MeteoLVProvider-macOS";
+			packageProductDependencies = (
+				63EC0544234E360400879866 /* SwiftSoup */,
+			);
 			productName = "MeteoLVProvider-macOS";
 			productReference = 631ABB44205D12B9009A2F35 /* MeteoLVProvider.framework */;
 			productType = "com.apple.product-type.framework";
@@ -394,8 +402,12 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 631ABAD9205D10DC009A2F35;
+			packageReferences = (
+				63EC0541234E35A400879866 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 631ABAE4205D10DC009A2F35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -462,38 +474,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
-		637F714F205D8D9800865550 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftSoup.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftSoup.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		637F7154205DA0D100865550 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/watchOS/SwiftSoup.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftSoup.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		6382D575205DA10600CAE2D4 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -535,38 +515,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		6382D57A205DA1B200CAE2D4 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/tvOS/SwiftSoup.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftSoup.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		6382D57B205DA1CC00CAE2D4 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/SwiftSoup.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftSoup.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -773,7 +721,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -791,17 +740,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.MeteoLVProvider;
 				PRODUCT_NAME = MeteoLVProvider;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -816,17 +766,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.MeteoLVProvider;
 				PRODUCT_NAME = MeteoLVProvider;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -838,11 +789,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SGNZQGS68;
 				INFOPLIST_FILE = MeteoLVProvideriOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.MeteoLVProvideriOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -854,10 +809,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SGNZQGS68;
 				INFOPLIST_FILE = MeteoLVProvideriOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.MeteoLVProvideriOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -873,18 +832,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-watchOS";
 				PRODUCT_NAME = MeteoLVProvider;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
@@ -901,18 +861,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-watchOS";
 				PRODUCT_NAME = MeteoLVProvider;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
@@ -928,18 +889,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-tvOS";
 				PRODUCT_NAME = MeteoLVProvider;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -955,18 +917,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-tvOS";
 				PRODUCT_NAME = MeteoLVProvider;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -983,20 +946,21 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-macOS";
 				PRODUCT_NAME = MeteoLVProvider;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1011,20 +975,21 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.MeteoLVProvider-macOS";
 				PRODUCT_NAME = MeteoLVProvider;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1086,6 +1051,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63EC0541234E35A400879866 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63EC0542234E35A400879866 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63EC0541234E35A400879866 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		63EC0544234E360400879866 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63EC0541234E35A400879866 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		63EC0546234E360B00879866 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63EC0541234E35A400879866 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		63EC0548234E361100879866 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63EC0541234E35A400879866 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 631ABADA205D10DC009A2F35 /* Project object */;
 }

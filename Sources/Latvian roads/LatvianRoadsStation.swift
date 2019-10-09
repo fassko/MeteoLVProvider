@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 import SwiftSoup
 
 /// Latvian roads weather station
