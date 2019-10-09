@@ -22,11 +22,6 @@ DerivedData
 # Bundler
 .bundle
 
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-Carthage/Checkouts
-
-Carthage/Build
-
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
 # http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
@@ -44,23 +39,9 @@ Packages
 .build/
 xcuserdata
 DerivedData/
-*.xcodeproj
 
 # End of https://www.gitignore.io/api/swiftpm
 
-
-# Created by https://www.gitignore.io/api/carthage
-
-### Carthage ###
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build
-
-
-# End of https://www.gitignore.io/api/carthage
 
 
 # Created by https://www.gitignore.io/api/swiftpm
@@ -70,8 +51,8 @@ Packages
 .build/
 xcuserdata
 DerivedData/
-*.xcodeproj
 
 
 # End of https://www.gitignore.io/api/swiftpm
 /fastlane/report.xml
+/.build
