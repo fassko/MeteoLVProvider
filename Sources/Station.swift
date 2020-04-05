@@ -1,7 +1,7 @@
 import Foundation
 
 /// Observation station
-public struct Station: Codable {
+public struct Station: Decodable {
 
   /// Id
 	let id: String

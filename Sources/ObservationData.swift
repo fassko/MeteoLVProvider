@@ -1,7 +1,7 @@
 import Foundation
 
 /// Observations data
-public struct ObservationData: Codable {
+public struct ObservationData: Decodable {
 
   /// Measure date
   let date: String
