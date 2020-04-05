@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.2
 import PackageDescription
 
 let package = Package(
@@ -9,7 +9,7 @@ let package = Package(
             targets: ["MeteoLVProvider"])
     ],
     dependencies: [
-        .package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.2.1")
+        .package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.3.1")
     ],
     targets: [
         .target(
