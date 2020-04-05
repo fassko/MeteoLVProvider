@@ -1,7 +1,7 @@
 PODS:
-  - MeteoLVProvider (0.3.0):
-    - SwiftSoup (~> 2.2)
-  - SwiftSoup (2.2.1)
+  - MeteoLVProvider (0.4.0):
+    - SwiftSoup (~> 2.3)
+  - SwiftSoup (2.3.1)
 
 DEPENDENCIES:
   - MeteoLVProvider (from `../`)
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MeteoLVProvider: 4f53516855c73dcffd481585df89aef078b0eda3
-  SwiftSoup: a91d3c96ecb6f8f13005552ef60f9075aae4a7f3
+  MeteoLVProvider: 13dedbe3d0fbc160449611f85ede38fb14ef056f
+  SwiftSoup: e5af192bc99be8398d5f93e15ff6a3c80ba81de1
 
 PODFILE CHECKSUM: c5dbef885edb57c8961b664f770b913b75d0aca4
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.9.1
