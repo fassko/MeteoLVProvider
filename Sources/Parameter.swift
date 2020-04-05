@@ -16,7 +16,7 @@ public struct Parameter: Decodable {
 	public let parameterId: String?
  
   /// Value
-	private let value: String?
+	public let value: String?
   
   public init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CodingKeys.self)
