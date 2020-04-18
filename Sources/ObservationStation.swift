@@ -17,6 +17,26 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable {
   /// lvceli.lv station
   case road(LatvianRoadsStation)
   
+  /// Latitude
+  public var latitude: Double {
+    switch self {
+    case .meteo(let meteoStation):
+      return meteoStation.latitude
+    case .road(let lvRoadStation):
+      return lvRoadStation.latitude
+    }
+  }
+  
+  /// Longitude
+  public var longitude: Double {
+    switch self {
+    case .meteo(let meteoStation):
+      return meteoStation.longitude
+    case .road(let lvRoadStation):
+      return lvRoadStation.longitude
+    }
+  }
+  
   /// ID of the station
   public var id: String {
     switch self {
