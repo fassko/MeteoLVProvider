@@ -1,5 +1,5 @@
 PODS:
-  - MeteoLVProvider (0.4.0):
+  - MeteoLVProvider (0.6.0):
     - SwiftSoup (~> 2.3)
   - SwiftSoup (2.3.1)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MeteoLVProvider: 13dedbe3d0fbc160449611f85ede38fb14ef056f
+  MeteoLVProvider: 2e2bc3f5f24a3b30cebddfe9aed7dc5bfbc9b82c
   SwiftSoup: e5af192bc99be8398d5f93e15ff6a3c80ba81de1
 
 PODFILE CHECKSUM: c5dbef885edb57c8961b664f770b913b75d0aca4
