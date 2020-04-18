@@ -47,6 +47,16 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable {
     }
   }
   
+  /// Wind
+  public var wind: String? {
+    switch self {
+    case .meteo(let meteoStation):
+      return meteoStation.wind
+    case .road(let lvRoadStation):
+      return lvRoadStation.wind
+    }
+  }
+  
   /// ID of the station
   public var id: String {
     switch self {

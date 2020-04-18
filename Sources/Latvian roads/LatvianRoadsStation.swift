@@ -42,6 +42,15 @@ public struct LatvianRoadsStation: Codable {
     return weatherData.first?.value
   }
   
+  /// Wind
+  public var wind: String? {
+    guard let wind = weatherData.first(where: { $0.label == "Vējš" }) else {
+      return nil
+    }
+    
+    return wind.value
+  }
+  
   /// Current weather data
   public var weatherData: [RoadStationWeatherData] {
     do {

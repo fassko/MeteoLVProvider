@@ -26,4 +26,17 @@ public struct Station: Decodable {
  
   /// Parameters
   public let parameters: [Parameter]?
+  
+  /// Wind
+  public var wind: String? {
+    guard let windDirectionParameter = parameters?.first(where: { $0.parameterId == "117" }),
+      let windDirectionValue = windDirectionParameter.value,
+      let windSpeedParameter = parameters?.first(where: { $0.parameterId == "113" }),
+      let windSpeedValue = windSpeedParameter.value
+    else {
+      return nil
+    }
+    
+    return "\(windDirectionValue) \(windSpeedValue)"
+  }
 }

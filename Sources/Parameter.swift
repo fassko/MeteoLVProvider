@@ -24,6 +24,5 @@ public struct Parameter: Decodable {
     name = try container.decode(String.self, forKey: .name)
     parameterId = try container.decodeIfPresent(String.self, forKey: .parameterId)
     value = try container.decodeIfPresent(String.self, forKey: .value)?.replacingOccurrences(of: " ", with: "")
-    
   }
 }
