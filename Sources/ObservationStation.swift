@@ -37,6 +37,16 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable {
     }
   }
   
+  /// Temperature
+  public var temperature: String? {
+    switch self {
+    case .meteo(let meteoStation):
+      return meteoStation.temperature
+    case .road(let lvRoadStation):
+      return lvRoadStation.temperature
+    }
+  }
+  
   /// ID of the station
   public var id: String {
     switch self {
