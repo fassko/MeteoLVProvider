@@ -15,6 +15,7 @@
 		631ABB13205D11A5009A2F35 /* MeteoLVProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631ABAE3205D10DC009A2F35 /* MeteoLVProvider.framework */; };
 		631ABB5A205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */; };
 		635524E8205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */; };
+		636EC0F9244B33A8004E42A9 /* ObservationStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EC0F8244B33A8004E42A9 /* ObservationStation.swift */; };
 		637F7139205D655600865550 /* LatvianRoadsStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7138205D655600865550 /* LatvianRoadsStation.swift */; };
 		637F713F205D660000865550 /* LatvianRoadsStationsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F713E205D660000865550 /* LatvianRoadsStationsData.swift */; };
 		637F714A205D75B500865550 /* MeteoLVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7149205D75B500865550 /* MeteoLVError.swift */; };
@@ -46,6 +47,7 @@
 		631ABB58205D13F8009A2F35 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoLVProvider_ExampleTests.swift; sourceTree = "<group>"; };
 		635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadStationWeatherData.swift; sourceTree = "<group>"; };
+		636EC0F8244B33A8004E42A9 /* ObservationStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationStation.swift; sourceTree = "<group>"; };
 		637F7138205D655600865550 /* LatvianRoadsStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatvianRoadsStation.swift; sourceTree = "<group>"; };
 		637F713E205D660000865550 /* LatvianRoadsStationsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatvianRoadsStationsData.swift; sourceTree = "<group>"; };
 		637F7143205D686800865550 /* MeteoLVProvider.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MeteoLVProvider.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -109,6 +111,7 @@
 				631ABB00205D115C009A2F35 /* Result.swift */,
 				637F7149205D75B500865550 /* MeteoLVError.swift */,
 				631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */,
+				636EC0F8244B33A8004E42A9 /* ObservationStation.swift */,
 				637F7153205D95F100865550 /* Meteo center */,
 				637F713D205D65E500865550 /* Latvian roads */,
 			);
@@ -299,6 +302,7 @@
 				631ABB07205D115C009A2F35 /* Station.swift in Sources */,
 				637F7139205D655600865550 /* LatvianRoadsStation.swift in Sources */,
 				637F713F205D660000865550 /* LatvianRoadsStationsData.swift in Sources */,
+				636EC0F9244B33A8004E42A9 /* ObservationStation.swift in Sources */,
 				631ABB02205D115C009A2F35 /* ObservationData.swift in Sources */,
 				631ABB06205D115C009A2F35 /* Result.swift in Sources */,
 				637F714A205D75B500865550 /* MeteoLVError.swift in Sources */,

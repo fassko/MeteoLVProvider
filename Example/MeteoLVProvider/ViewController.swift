@@ -16,16 +16,6 @@ class ViewController: UIViewController {
     
     let provider = MeteoLVProvider()
     
-    provider.latvianRoadsObservations { result in
-      switch result {
-        
-      case let .success(stations):
-        print(stations)
-      case let .failure(error):
-        print(error)
-      }
-    }
-    
     provider.observations { result in
       switch result {
       case let .success(stations):

@@ -1,23 +1,47 @@
 import Foundation
 
 public protocol MeteoLVProviderProtocol {
-  /// Get observations from Latvian Environment, Geology and Meteorology Centre
+  /// Get observations from Latvian Environment, Geology and Meteorology Centre and Latvian State Roads
   ///
   /// - Parameter completion: Completion block with Result type
-  func observations(completion: @escaping (Result<[Station]>) -> Void)
-  
-  /// Get observations from Latvian State Roads
-  ///
-  /// - Parameter completion: Completion block with Result type
-  func latvianRoadsObservations(completion: @escaping (Result<[LatvianRoadsStation]>) -> Void)
+  func observations(completion: @escaping (Result<[ObservationStation]>) -> Void)
 }
 
 /// Meteo.lv observations provider
 public struct MeteoLVProvider: MeteoLVProviderProtocol {
   
   public init() {}
+  
+  public func observations(completion: @escaping (Result<[ObservationStation]>) -> Void) {
+    meteoLVObservations { result in
+      switch result {
+      case .success(let meteoLVData):
+        var tmpStationsData = meteoLVData.map { ObservationStation.meteo($0) }
+        
+        self.latvianRoadsObservations { result in
+          switch result {
+          case .success(let lvRoadsData):
+            let lvRoadStations = lvRoadsData.map { ObservationStation.road($0) }
+            tmpStationsData.append(contentsOf: lvRoadStations)
 
-  public func observations(completion: @escaping (Result<[Station]>) -> Void) {
+            DispatchQueue.main.async {
+              completion(.success(tmpStationsData))
+            }
+          case .failure(let error):
+            DispatchQueue.main.async {
+              completion(.failure(error))
+            }
+          }
+        }
+      case .failure(let error):
+        DispatchQueue.main.async {
+          completion(.failure(error))
+        }
+      }
+    }
+  }
+
+  func meteoLVObservations(completion: @escaping (Result<[Station]>) -> Void) {
     let url = URL(string: "http://www.meteo.lv/meteorologijas-operativie-dati/")!
     URLSession.shared.dataTask(with: url) { data, _, error in
       if let error = error {
@@ -33,7 +57,7 @@ public struct MeteoLVProvider: MeteoLVProviderProtocol {
     }.resume()
   }
   
-  public func latvianRoadsObservations(completion: @escaping (Result<[LatvianRoadsStation]>) -> Void) {
+  func latvianRoadsObservations(completion: @escaping (Result<[LatvianRoadsStation]>) -> Void) {
     let urlString = "https://gispub.lvceli.lv/gispub/rest/services/GISPUB/SIC_CMSPoint/MapServer/0/query"
     var urlComponents = URLComponents(string: urlString)
     

@@ -12,12 +12,44 @@ import XCTest
 
 class MeteoLVProvider_ExampleTests: XCTestCase {
     
-  func testExample() {
-    
-    let expectation = self.expectation(description: "observations")
-    var observations: [Station]?
+  func testObservations() {
+    let expectation = self.expectation(description: #function)
     
     MeteoLVProvider().observations { result in
+      switch result {
+      case let .success(observationStations):
+        observationStations.forEach { station in
+          switch station {
+          case .meteo(let meteoLVStation):
+            XCTAssertNotNil(meteoLVStation.id)
+            XCTAssertNotNil(meteoLVStation.latitude)
+            XCTAssertNotNil(meteoLVStation.longitude)
+            XCTAssertNotNil(meteoLVStation.name)
+            XCTAssertNotNil(meteoLVStation.temperature)
+            XCTAssertNotNil(meteoLVStation.wind)
+          case .road(let lvRoadStation):
+            XCTAssertNotNil(lvRoadStation.latitude)
+            XCTAssertNotNil(lvRoadStation.latitude)
+            XCTAssertNotNil(lvRoadStation.longitude)
+            XCTAssertNotNil(lvRoadStation.name)
+            XCTAssertNotNil(lvRoadStation.temperature)
+          }
+        }
+        
+        expectation.fulfill()
+      case let .failure(error):
+        XCTFail("Failed to get observations \(error)")
+      }
+    }
+    
+    waitForExpectations(timeout: 5, handler: nil)
+  }
+  
+  func testMeteoLV() {
+    let expectation = self.expectation(description: #function)
+    var observations: [LatvianRoadsStation]?
+    
+    MeteoLVProvider().latvianRoadsObservations { result in
       switch result {
       case let .success(stations):
         observations = stations
@@ -33,8 +65,7 @@ class MeteoLVProvider_ExampleTests: XCTestCase {
   }
   
   func testLatvianRoads() {
-
-    let expectation = self.expectation(description: "latvianRoads")
+    let expectation = self.expectation(description: #function)
     var observations: [LatvianRoadsStation]?
 
     MeteoLVProvider().latvianRoadsObservations { result in
