@@ -23,9 +23,9 @@ public struct MeteoLVProvider: MeteoLVProviderProtocol {
           case .success(let lvRoadsData):
             let lvRoadStations = lvRoadsData.map { ObservationStation.road($0) }
             tmpStationsData.append(contentsOf: lvRoadStations)
-
+            
             DispatchQueue.main.async {
-              completion(.success(tmpStationsData))
+              completion(.success(tmpStationsData.sorted()))
             }
           case .failure(let error):
             DispatchQueue.main.async {
