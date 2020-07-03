@@ -9,7 +9,7 @@
 import Foundation
 
 /// Observation station
-public enum ObservationStation: Comparable, CustomStringConvertible, Equatable {
+public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, Hashable, Identifiable {
   
   /// meteo.lv station
   case meteo(Station)

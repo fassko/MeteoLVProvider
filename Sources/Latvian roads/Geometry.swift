@@ -9,7 +9,7 @@
 import Foundation
 
 // Geometry (coordinates) of station
-struct Geometry: Codable {
+struct Geometry: Codable, Hashable {
  
   /// Latitude
   public let latitude: Double

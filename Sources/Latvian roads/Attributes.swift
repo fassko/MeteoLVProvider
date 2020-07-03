@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Attributes: Codable {
+struct Attributes: Codable, Hashable {
   
   /// Id of station
   let id: String

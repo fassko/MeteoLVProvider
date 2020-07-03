@@ -10,7 +10,7 @@ import Foundation
 import SwiftSoup
 
 /// Latvian roads weather station
-public struct LatvianRoadsStation: Codable {
+public struct LatvianRoadsStation: Codable, Hashable {
   
   /// Name of station
   public var name: String {

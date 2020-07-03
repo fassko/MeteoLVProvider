@@ -1,7 +1,7 @@
 import Foundation
 
 /// Observation parameter
-public struct Parameter: Decodable {
+public struct Parameter: Decodable, Hashable {
   
   enum CodingKeys: String, CodingKey {
       case name
