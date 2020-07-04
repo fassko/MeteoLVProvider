@@ -10,7 +10,6 @@
 		631ABB02205D115C009A2F35 /* ObservationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFC205D115C009A2F35 /* ObservationData.swift */; };
 		631ABB03205D115C009A2F35 /* MeteoLVProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */; };
 		631ABB04205D115C009A2F35 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFE205D115C009A2F35 /* Parameter.swift */; };
-		631ABB06205D115C009A2F35 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB00205D115C009A2F35 /* Result.swift */; };
 		631ABB07205D115C009A2F35 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB01205D115C009A2F35 /* Station.swift */; };
 		631ABB13205D11A5009A2F35 /* MeteoLVProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631ABAE3205D10DC009A2F35 /* MeteoLVProvider.framework */; };
 		631ABB5A205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */; };
@@ -39,7 +38,6 @@
 		631ABAFC205D115C009A2F35 /* ObservationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationData.swift; sourceTree = "<group>"; };
 		631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoLVProvider.swift; sourceTree = "<group>"; };
 		631ABAFE205D115C009A2F35 /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
-		631ABB00205D115C009A2F35 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		631ABB01205D115C009A2F35 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		631ABB08205D118C009A2F35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
 		631ABB0E205D11A5009A2F35 /* MeteoLVProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeteoLVProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +106,6 @@
 		631ABAFB205D115C009A2F35 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				631ABB00205D115C009A2F35 /* Result.swift */,
 				637F7149205D75B500865550 /* MeteoLVError.swift */,
 				631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */,
 				636EC0F8244B33A8004E42A9 /* ObservationStation.swift */,
@@ -304,7 +301,6 @@
 				637F713F205D660000865550 /* LatvianRoadsStationsData.swift in Sources */,
 				636EC0F9244B33A8004E42A9 /* ObservationStation.swift in Sources */,
 				631ABB02205D115C009A2F35 /* ObservationData.swift in Sources */,
-				631ABB06205D115C009A2F35 /* Result.swift in Sources */,
 				637F714A205D75B500865550 /* MeteoLVError.swift in Sources */,
 				6382D583205DA45000CAE2D4 /* Geometry.swift in Sources */,
 				6382D588205DA46D00CAE2D4 /* Attributes.swift in Sources */,

@@ -4,7 +4,7 @@ public protocol MeteoLVProviderProtocol {
   /// Get observations from Latvian Environment, Geology and Meteorology Centre and Latvian State Roads
   ///
   /// - Parameter completion: Completion block with Result type
-  func observations(completion: @escaping (Result<[ObservationStation]>) -> Void)
+  func observations(completion: @escaping (Result<[ObservationStation], Error>) -> Void)
 }
 
 /// Meteo.lv observations provider
@@ -12,7 +12,7 @@ public struct MeteoLVProvider: MeteoLVProviderProtocol {
   
   public init() {}
   
-  public func observations(completion: @escaping (Result<[ObservationStation]>) -> Void) {
+  public func observations(completion: @escaping (Result<[ObservationStation], Error>) -> Void) {
     meteoLVObservations { result in
       switch result {
       case .success(let meteoLVData):
@@ -41,23 +41,23 @@ public struct MeteoLVProvider: MeteoLVProviderProtocol {
     }
   }
 
-  func meteoLVObservations(completion: @escaping (Result<[Station]>) -> Void) {
+  private func meteoLVObservations(completion: @escaping (Result<[Station], Error>) -> Void) {
     let url = URL(string: "http://www.meteo.lv/meteorologijas-operativie-dati/")!
     URLSession.shared.dataTask(with: url) { data, _, error in
       if let error = error {
-        completion(Result.failure(error))
+        completion(.failure(error))
       } else if let data = data {
         do {
           let observationData = try JSONDecoder().decode(ObservationData.self, from: data)
-          completion(Result.success(observationData.stations))
+          completion(.success(observationData.stations))
         } catch {
-          completion(Result.failure(error))
+          completion(.failure(error))
         }
       }
     }.resume()
   }
   
-  func latvianRoadsObservations(completion: @escaping (Result<[LatvianRoadsStation]>) -> Void) {
+  private func latvianRoadsObservations(completion: @escaping (Result<[LatvianRoadsStation], Error>) -> Void) {
     let urlString = "https://gispub.lvceli.lv/gispub/rest/services/GISPUB/SIC_CMSPoint/MapServer/0/query"
     var urlComponents = URLComponents(string: urlString)
     
@@ -82,20 +82,20 @@ public struct MeteoLVProvider: MeteoLVProviderProtocol {
     ]
     
     guard let url = urlComponents?.url else {
-      completion(Result.failure(MeteoLVError.latvianRoadsweatherData))
+      completion(.failure(MeteoLVError.latvianRoadsweatherData))
       return
     }
     
     URLSession.shared.dataTask(with: url) { data, _, error in
       if let error = error {
-        completion(Result.failure(error))
+        completion(.failure(error))
       } else if let data = data {
         do {
           let stations = try JSONDecoder().decode(LatvianRoadsStationsData.self, from: data)
           let filteredStations = stations.features.filter({ $0.attributes.weather ?? " N/A " != " N/A " })
-          completion(Result.success(filteredStations))
+          completion(.success(filteredStations))
         } catch {
-          completion(Result.failure(error))
+          completion(.failure(error))
         }
       }
     }.resume()
