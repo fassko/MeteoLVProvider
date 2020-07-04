@@ -57,13 +57,22 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
     }
   }
   
+  var uniqueId: String {
+    switch self {
+    case .meteo(let meteoStation):
+      return meteoStation.id
+    case .road(let lvRoadStation):
+      return lvRoadStation.uniqueId
+    }
+  }
+  
   /// ID of the station
   public var id: String {
     switch self {
     case .meteo:
-      return Data((name + "meteo").utf8).hexDescription
+      return Data((name + uniqueId + "meteo").utf8).hexDescription
     case .road:
-      return Data((name + "lvRoad").utf8).hexDescription
+      return Data((name + uniqueId + "lvRoad").utf8).hexDescription
     }
   }
   

@@ -14,32 +14,36 @@ public struct LatvianRoadsStation: Codable, Hashable {
   
   /// Name of station
   public var name: String {
-    return attributes.name
+    attributes.name
   }
   
   /// Road name where station is located
   public var road: String {
-    return attributes.road
+    attributes.road
   }
   
   /// Km on the road
   public var km: Double {
-    return attributes.km
+    attributes.km
   }
   
   /// Latitude
   public var latitude: Double {
-    return geometry.latitude
+    geometry.latitude
   }
   
   /// Longitude
   public var longitude: Double {
-    return geometry.longitude
+    geometry.longitude
   }
   
   /// Current temperature
   public var temperature: String? {
-    return weatherData.first?.value
+    weatherData.first?.value
+  }
+  
+  public var uniqueId: String {
+    attributes.id
   }
   
   /// Wind
