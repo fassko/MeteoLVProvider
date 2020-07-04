@@ -42,7 +42,7 @@ public struct MeteoLVProvider: MeteoLVProviderProtocol {
   }
 
   private func meteoLVObservations(completion: @escaping (Result<[Station], Error>) -> Void) {
-    let url = URL(string: "http://www.meteo.lv/meteorologijas-operativie-dati/")!
+    let url = URL(string: "https://www.meteo.lv/meteorologijas-operativie-dati/")!
     URLSession.shared.dataTask(with: url) { data, _, error in
       if let error = error {
         completion(.failure(error))
