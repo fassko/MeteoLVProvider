@@ -9,7 +9,7 @@ let package = Package(
             targets: ["MeteoLVProvider"])
     ],
     dependencies: [
-        .package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.3.1")
+        .package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.3.2")
     ],
     targets: [
         .target(
