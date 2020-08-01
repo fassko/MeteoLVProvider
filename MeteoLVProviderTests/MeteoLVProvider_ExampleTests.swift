@@ -47,14 +47,14 @@ class MeteoLVProvider_ExampleTests: XCTestCase {
   
   func testMeteoLV() {
     let expectation = self.expectation(description: #function)
-    var observations: [LatvianRoadsStation]?
+    var observations: [Station]?
     
-    MeteoLVProvider().latvianRoadsObservations { result in
+    MeteoLVProvider().observations { result in
       switch result {
-      case let .success(stations):
-        observations = stations
+      case .success(let stations):
+        observations = stations.meteoLVStations
         expectation.fulfill()
-      case let .failure(error):
+      case .failure(let error):
         XCTFail("Failed to get observations \(error)")
       }
     }
@@ -68,10 +68,10 @@ class MeteoLVProvider_ExampleTests: XCTestCase {
     let expectation = self.expectation(description: #function)
     var observations: [LatvianRoadsStation]?
 
-    MeteoLVProvider().latvianRoadsObservations { result in
+    MeteoLVProvider().observations { result in
       switch result {
-      case let .success(stations):
-        observations = stations
+      case .success(let stations):
+        observations = stations.lvRoadStations
         expectation.fulfill()
       case let .failure(error):
         XCTFail("Failed to get observations \(error)")
