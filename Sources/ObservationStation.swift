@@ -128,7 +128,7 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
           return nil
         }
         
-        [
+        return [
           "name": parameter.name,
           "value": value
         ]
