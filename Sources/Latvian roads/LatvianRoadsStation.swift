@@ -62,7 +62,7 @@ public struct LatvianRoadsStation: Codable, Hashable {
         return []
       }
       
-      let weatherData = try parts.compactMap({ part -> RoadStationWeatherData? in
+      let weatherData = try parts.compactMap { part -> RoadStationWeatherData? in
         let doc: Document = try SwiftSoup.parse(part)
         let seperatedKeyValue = try doc.text().components(separatedBy: ":")
         
@@ -75,7 +75,7 @@ public struct LatvianRoadsStation: Codable, Hashable {
           label: label,
           value: value.trimmingCharacters(in: .whitespaces)
         )
-      }).map({ $0 })
+      } .map { $0 }
       
       return weatherData
     } catch {

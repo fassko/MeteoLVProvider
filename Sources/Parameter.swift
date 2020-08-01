@@ -4,19 +4,19 @@ import Foundation
 public struct Parameter: Decodable, Hashable {
   
   enum CodingKeys: String, CodingKey {
-      case name
-      case parameterId
-      case value
+    case name
+    case parameterId
+    case value
   }
   
   /// Name
-	public let name: String
- 
+  public let name: String
+  
   /// Parameter ID
-	public let parameterId: String?
- 
+  public let parameterId: String?
+  
   /// Value
-	public let value: String?
+  public let value: String?
   
   public init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CodingKeys.self)
