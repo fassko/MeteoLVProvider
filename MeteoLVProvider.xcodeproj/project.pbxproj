@@ -20,6 +20,10 @@
 		637F714A205D75B500865550 /* MeteoLVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7149205D75B500865550 /* MeteoLVError.swift */; };
 		6382D583205DA45000CAE2D4 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D582205DA45000CAE2D4 /* Geometry.swift */; };
 		6382D588205DA46D00CAE2D4 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382D587205DA46D00CAE2D4 /* Attributes.swift */; };
+		639ADA9F256460B9002397CB /* LvgmcProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ADA9E256460B9002397CB /* LvgmcProvider.swift */; };
+		639ADAA325646126002397CB /* LvgmcStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ADAA225646126002397CB /* LvgmcStation.swift */; };
+		639ADAAB25647253002397CB /* LvgmcData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ADAAA25647253002397CB /* LvgmcData.swift */; };
+		639ADAAF2564737E002397CB /* LvgmcDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ADAAE2564737E002397CB /* LvgmcDataTests.swift */; };
 		63EC0543234E35A400879866 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 63EC0542234E35A400879866 /* SwiftSoup */; };
 		63F4D10324D5F0D400E45AE0 /* ObservationStation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F4D10224D5F0D400E45AE0 /* ObservationStation+Extensions.swift */; };
 		63F4D10524D5F10100E45AE0 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F4D10424D5F10100E45AE0 /* Data+Extensions.swift */; };
@@ -59,6 +63,10 @@
 		6382D580205DA2D200CAE2D4 /* SwiftSoup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSoup.framework; path = Carthage/Build/tvOS/SwiftSoup.framework; sourceTree = "<group>"; };
 		6382D582205DA45000CAE2D4 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		6382D587205DA46D00CAE2D4 /* Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
+		639ADA9E256460B9002397CB /* LvgmcProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LvgmcProvider.swift; sourceTree = "<group>"; };
+		639ADAA225646126002397CB /* LvgmcStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LvgmcStation.swift; sourceTree = "<group>"; };
+		639ADAAA25647253002397CB /* LvgmcData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LvgmcData.swift; sourceTree = "<group>"; };
+		639ADAAE2564737E002397CB /* LvgmcDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LvgmcDataTests.swift; sourceTree = "<group>"; };
 		63EC054C234E3A3400879866 /* MeteoLVProvider.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MeteoLVProvider.xctestplan; sourceTree = "<group>"; };
 		63F4D10224D5F0D400E45AE0 /* ObservationStation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservationStation+Extensions.swift"; sourceTree = "<group>"; };
 		63F4D10424D5F10100E45AE0 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
@@ -110,6 +118,7 @@
 		631ABAFB205D115C009A2F35 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				639ADA992564605E002397CB /* lvgmc */,
 				637F7149205D75B500865550 /* MeteoLVError.swift */,
 				631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */,
 				636EC0F8244B33A8004E42A9 /* ObservationStation.swift */,
@@ -125,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */,
+				639ADAAE2564737E002397CB /* LvgmcDataTests.swift */,
 				631ABB12205D11A5009A2F35 /* Info.plist */,
 			);
 			path = MeteoLVProviderTests;
@@ -162,6 +172,16 @@
 				631ABB01205D115C009A2F35 /* Station.swift */,
 			);
 			name = "Meteo center";
+			sourceTree = "<group>";
+		};
+		639ADA992564605E002397CB /* lvgmc */ = {
+			isa = PBXGroup;
+			children = (
+				639ADAA225646126002397CB /* LvgmcStation.swift */,
+				639ADA9E256460B9002397CB /* LvgmcProvider.swift */,
+				639ADAAA25647253002397CB /* LvgmcData.swift */,
+			);
+			path = lvgmc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +331,10 @@
 				631ABB02205D115C009A2F35 /* ObservationData.swift in Sources */,
 				637F714A205D75B500865550 /* MeteoLVError.swift in Sources */,
 				6382D583205DA45000CAE2D4 /* Geometry.swift in Sources */,
+				639ADAA325646126002397CB /* LvgmcStation.swift in Sources */,
 				6382D588205DA46D00CAE2D4 /* Attributes.swift in Sources */,
+				639ADAAB25647253002397CB /* LvgmcData.swift in Sources */,
+				639ADA9F256460B9002397CB /* LvgmcProvider.swift in Sources */,
 				631ABB03205D115C009A2F35 /* MeteoLVProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				631ABB5A205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift in Sources */,
+				639ADAAF2564737E002397CB /* LvgmcDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -443,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
