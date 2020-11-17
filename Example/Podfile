@@ -1,6 +1,0 @@
-platform :ios, '12.0'
-use_frameworks!
-
-target 'MeteoLVProvider_Example' do
-  pod 'MeteoLVProvider', :path => '../'
-end

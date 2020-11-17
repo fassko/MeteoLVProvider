@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MeteoLVProvider'
-  s.version          = '0.6.1'
+  s.version          = '0.7.0'
   s.summary          = 'Observations providers from meteo.lv'
 
   s.description      = <<-DESC
@@ -12,10 +12,10 @@ Observations providers from meteo.lv website.
   s.author           = { 'Kristaps Grinbergs' => 'fassko@gmail.com' }
   s.source           = { :git => 'https://github.com/fassko/MeteoLVProvider.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
-  s.tvos.deployment_target = '10.0'
-  s.osx.deployment_target = '10.12'
-  s.watchos.deployment_target = '3.0'
+  s.ios.deployment_target = '13.1'
+  s.tvos.deployment_target = '13.1'
+  s.osx.deployment_target = '15.0'
+  s.watchos.deployment_target = '6.0'
 
   s.framework = 'Foundation'
 
