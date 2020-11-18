@@ -78,7 +78,7 @@ struct LvgmcResponseData: Decodable {
 }
 
 extension LvgmcData {
-  var parameters: [[String: String]] {
+  public var parameters: [[String: String]] {
     [
       [
         "Temperatūra (°C)": temperature.description,
