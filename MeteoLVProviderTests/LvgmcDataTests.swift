@@ -15,15 +15,15 @@ import Combine
 class LvgmcDataTests: XCTestCase {
   
   var lvgmcProvider: LvgmcProvider!
+  var cancellables: Set<AnyCancellable>!
   
   override func setUp() {
     lvgmcProvider = LvgmcProvider()
+    cancellables = Set<AnyCancellable>()
   }
 
   func testGetDataCombine() {
     let expectation = self.expectation(description: #function)
-    
-    var cancellables = Set<AnyCancellable>()
     
     lvgmcProvider.getWeatherDataCombine()
       .sink { completion in
@@ -34,11 +34,29 @@ class LvgmcDataTests: XCTestCase {
           XCTFail("Failed to get LvgmcData \(error)")
         }
       } receiveValue: { lvgmcData in
-        print(lvgmcData.count)
         XCTAssertFalse(lvgmcData.isEmpty)
       }
       .store(in: &cancellables)
     
+    waitForExpectations(timeout: 5, handler: nil)
+  }
+  
+  func testForecastData() {
+    let expectation = self.expectation(description: #function)
+    
+    lvgmcProvider.getWeatherForecastNextHour()
+      .sink { completion in
+        switch completion {
+        case .finished:
+          expectation.fulfill()
+        case .failure(let error):
+          XCTFail("Failed to get weather forecast for next hour \(error)")
+        }
+      } receiveValue: { weatherForecastData in
+        XCTAssertFalse(weatherForecastData.isEmpty)
+      }
+      .store(in: &cancellables)
+
     waitForExpectations(timeout: 5, handler: nil)
   }
   
