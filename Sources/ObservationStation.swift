@@ -21,7 +21,7 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
   public var latitude: Double {
     switch self {
     case .lvgmc(let lvgmcData):
-      return lvgmcData.temperature
+      return lvgmcData.latitude
     case .road(let lvRoadStation):
       return lvRoadStation.latitude
     }
