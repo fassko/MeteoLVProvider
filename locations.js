@@ -21,7 +21,7 @@ let lvgmcStations = [
 locations.forEach((location, index) => {
   console.log(location.code)
 
-  content += `  LvgmcStation(code: "${location.code}", name: "${location.name}", key: "${location.key}", latitude: ${location.lat}, longitude: ${location.lon})`
+  content += `  LvgmcStation(code: "${location.code}", name: "${location.name}", key: "${location.key}", latitude: ${location.lon}, longitude: ${location.lat})`
 
   if (index === locations.length - 1) {
     content += ``
