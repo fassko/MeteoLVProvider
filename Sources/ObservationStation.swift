@@ -119,7 +119,12 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
   public var parameters: [[String: String]] {
     switch self {
     case let .lvgmc(lvgmcData):
-      return lvgmcData.parameters
+      return lvgmcData.parameters.map { key, value in
+        [
+          "name": key,
+          "value": value
+        ]
+      }
       
     case let .road(roadStation):
       return roadStation.weatherData.map { parameter in

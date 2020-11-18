@@ -78,18 +78,16 @@ struct LvgmcResponseData: Decodable {
 }
 
 extension LvgmcData {
-  public var parameters: [[String: String]] {
+  public var parameters: [String: String] {
     [
-      [
-        "Temperatūra (°C)": temperature.description,
-        "Vēja virziens": windDirection?.description ?? "",
-        "Vēja ātrums (m/s)": windSpeed.description,
-        "Mitrums (%)": relativeHumidity.description,
-        "Spiediens (mm Hg)": atmosphericPressure.description,
-        "Nokrišņi (mm)": precipitation.description,
-        "Redzamība (m)": visibility.description,
-        "Sniega sega": snowCover.description
-      ]
+      "Temperatūra (°C)": temperature.description,
+      "Vēja virziens": windDirection?.description ?? "",
+      "Vēja ātrums (m/s)": windSpeed.description,
+      "Mitrums (%)": relativeHumidity.description,
+      "Spiediens (mm Hg)": atmosphericPressure.description,
+      "Nokrišņi (mm)": precipitation.description,
+      "Redzamība (m)": visibility.description,
+      "Sniega sega": snowCover.description
     ]
   }
 }
