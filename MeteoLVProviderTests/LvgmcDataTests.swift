@@ -19,24 +19,7 @@ class LvgmcDataTests: XCTestCase {
   override func setUp() {
     lvgmcProvider = LvgmcProvider()
   }
-  
-  func testGetData() {
-    let expectation = self.expectation(description: #function)
-    
-    lvgmcProvider.getWeatherData { result in
-      switch result {
-      
-      case .success(let lvgmcData):
-        XCTAssertFalse(lvgmcData.isEmpty)
-      case .failure(let error):
-        XCTFail("Failed to get LvgmcData \(error)")
-      }
-      expectation.fulfill()
-    }
-    
-    waitForExpectations(timeout: 5, handler: nil)
-  }
-  
+
   func testGetDataCombine() {
     let expectation = self.expectation(description: #function)
     
@@ -51,6 +34,7 @@ class LvgmcDataTests: XCTestCase {
           XCTFail("Failed to get LvgmcData \(error)")
         }
       } receiveValue: { lvgmcData in
+        print(lvgmcData.count)
         XCTAssertFalse(lvgmcData.isEmpty)
       }
       .store(in: &cancellables)

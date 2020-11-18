@@ -8,9 +8,26 @@
 
 import Foundation
 
-public struct LvgmcData: Decodable {
+public struct LvgmcData {
+  public let measuredDate: Date
+  public let stationCode: String
+  public let stationName: String
+  public let temperature: Double?
+  public let windDirection: Double?
+  public let windSpeed: Double
+  public let relativeHumidity: Double
+  public let atmosphericPressure: Double
+  public let precipitation: Double
+  public let visibility: Double
+  public let snowCover: Double
+  public let latitude: Double
+  public let longitude: Double
+}
+
+struct LvgmcResponseData: Decodable {
   let measuredDate: Date
   let stationCode: String
+  let stationName: String?
   let temperature: Double?
   let windDirection: Double?
   let windSpeed: Double?
@@ -19,6 +36,8 @@ public struct LvgmcData: Decodable {
   let precipitation: Double?
   let visibility: Double?
   let snowCover: Double?
+  let latitude: Double?
+  let longitude: Double?
   
   enum CodingKeys: String, CodingKey {
     case measuredDate = "laiks"
@@ -42,7 +61,9 @@ public struct LvgmcData: Decodable {
     dateFormatter.dateFormat = "yyyy.MM.dd HH:mm"
     measuredDate = dateFormatter.date(from: measuredDateString)!
     
-    stationCode = try container.decode(String.self, forKey: .stationCode)
+    let stationCodeString = try container.decode(String.self, forKey: .stationCode)
+    stationCode = stationCodeString
+    stationName = lvgmcStations.first { $0.code == stationCodeString }?.name
     temperature = try container.decodeIfPresent(String.self, forKey: .temperature)?.doubleValue
     windDirection = try container.decodeIfPresent(String.self, forKey: .windDirection)?.doubleValue
     windSpeed = try container.decodeIfPresent(String.self, forKey: .windSpeed)?.doubleValue
@@ -51,6 +72,8 @@ public struct LvgmcData: Decodable {
     precipitation = try container.decodeIfPresent(String.self, forKey: .precipitation)?.doubleValue
     visibility = try container.decodeIfPresent(String.self, forKey: .visibility)?.doubleValue
     snowCover = try container.decodeIfPresent(String.self, forKey: .snowCover)?.doubleValue
+    latitude = lvgmcStations.first { $0.code == stationCodeString }?.latitude
+    longitude = lvgmcStations.first { $0.code == stationCodeString }?.longitude
   }
 }
 

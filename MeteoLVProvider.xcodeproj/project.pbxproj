@@ -67,6 +67,7 @@
 		639ADAA225646126002397CB /* LvgmcStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LvgmcStation.swift; sourceTree = "<group>"; };
 		639ADAAA25647253002397CB /* LvgmcData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LvgmcData.swift; sourceTree = "<group>"; };
 		639ADAAE2564737E002397CB /* LvgmcDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LvgmcDataTests.swift; sourceTree = "<group>"; };
+		639ADAC02565098E002397CB /* LvgmcDataPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LvgmcDataPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		63EC054C234E3A3400879866 /* MeteoLVProvider.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MeteoLVProvider.xctestplan; sourceTree = "<group>"; };
 		63F4D10224D5F0D400E45AE0 /* ObservationStation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservationStation+Extensions.swift"; sourceTree = "<group>"; };
 		63F4D10424D5F10100E45AE0 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		631ABAD9205D10DC009A2F35 = {
 			isa = PBXGroup;
 			children = (
+				639ADAC02565098E002397CB /* LvgmcDataPlayground.playground */,
 				63EC054C234E3A3400879866 /* MeteoLVProvider.xctestplan */,
 				637F7143205D686800865550 /* MeteoLVProvider.playground */,
 				631ABB58205D13F8009A2F35 /* README.md */,
