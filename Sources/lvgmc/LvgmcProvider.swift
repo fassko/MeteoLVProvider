@@ -70,4 +70,35 @@ public struct LvgmcProvider {
       .receive(on: DispatchQueue.main)
       .eraseToAnyPublisher()
   }
+  
+  public func getWeatherForecastNextHour() -> AnyPublisher<[LvgmcWeatherForecast], Error> {
+    
+    let queryItems = [URLQueryItem(name: "laiks", value: Date().nextHourDateString)]
+    var urlComponents = URLComponents(string: "https://videscentrs.lvgmc.lv/data/weather_points_forecast")!
+    urlComponents.queryItems = queryItems
+    
+    return URLSession.shared
+      .dataTaskPublisher(for: urlComponents.url!)
+      .map { $0.data }
+      .decode(type: [LvgmcWeatherForecast].self, decoder: JSONDecoder())
+      .mapError { $0 as Error }
+      .receive(on: DispatchQueue.main)
+      .eraseToAnyPublisher()
+      
+  }
+}
+
+extension Date {
+  public var nextHourDateString: String {
+    var calendar = Calendar.current
+    calendar.timeZone = TimeZone(identifier: "GMT+2")!
+    let minutes = calendar.component(.minute, from: self)
+    let components = DateComponents(hour: 1, minute: -minutes)
+    let nextHourDate = calendar.date(byAdding: components, to: self) ?? self
+    
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyMMddHHmm"
+    
+    return dateFormatter.string(from: nextHourDate)
+  }
 }

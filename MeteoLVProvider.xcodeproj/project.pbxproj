@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630907DC2565A2C60099FC05 /* LvgmcWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630907DB2565A2C60099FC05 /* LvgmcWeatherForecast.swift */; };
 		631ABB02205D115C009A2F35 /* ObservationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFC205D115C009A2F35 /* ObservationData.swift */; };
 		631ABB03205D115C009A2F35 /* MeteoLVProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */; };
 		631ABB04205D115C009A2F35 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFE205D115C009A2F35 /* Parameter.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630907DB2565A2C60099FC05 /* LvgmcWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LvgmcWeatherForecast.swift; sourceTree = "<group>"; };
 		631ABAE3205D10DC009A2F35 /* MeteoLVProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeteoLVProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		631ABAFC205D115C009A2F35 /* ObservationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationData.swift; sourceTree = "<group>"; };
 		631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoLVProvider.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			children = (
 				639ADAA225646126002397CB /* LvgmcStation.swift */,
 				639ADA9E256460B9002397CB /* LvgmcProvider.swift */,
+				630907DB2565A2C60099FC05 /* LvgmcWeatherForecast.swift */,
 				639ADAAA25647253002397CB /* LvgmcData.swift */,
 			);
 			path = lvgmc;
@@ -333,6 +336,7 @@
 				631ABB02205D115C009A2F35 /* ObservationData.swift in Sources */,
 				637F714A205D75B500865550 /* MeteoLVError.swift in Sources */,
 				6382D583205DA45000CAE2D4 /* Geometry.swift in Sources */,
+				630907DC2565A2C60099FC05 /* LvgmcWeatherForecast.swift in Sources */,
 				639ADAA325646126002397CB /* LvgmcStation.swift in Sources */,
 				6382D588205DA46D00CAE2D4 /* Attributes.swift in Sources */,
 				639ADAAB25647253002397CB /* LvgmcData.swift in Sources */,

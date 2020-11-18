@@ -81,4 +81,8 @@ extension String {
   var doubleValue: Double? {
     Double(self)
   }
+  
+  var doubleValueUnwrapped: Double {
+    Double(self) ?? 0
+  }
 }

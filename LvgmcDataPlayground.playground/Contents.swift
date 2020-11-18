@@ -13,8 +13,24 @@ let cancellable = lvgmcProvider.getWeatherDataCombine()
   .sink(receiveCompletion: { completion in
     switch completion {
     case .finished:
-      PlaygroundPage.current.finishExecution()
+//      PlaygroundPage.current.finishExecution()
+      break
     }
   }) { lvgmcData in
     print(lvgmcData)
   }
+
+
+let cancellable2 = lvgmcProvider.getWeatherForecastNextHour()
+  .replaceError(with: [])
+  .sink { completion in
+    switch completion {
+    case .finished:
+//      PlaygroundPage.current.finishExecution()
+      break
+    }
+  } receiveValue: { forecastData in
+    print(forecastData)
+  }
+
+
