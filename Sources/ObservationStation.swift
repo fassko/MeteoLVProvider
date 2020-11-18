@@ -11,8 +11,8 @@ import Foundation
 /// Observation station
 public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, Hashable, Identifiable {
   
-  /// meteo.lv station
-  case meteo(Station)
+  /// lvgmc station
+  case lvgmc(LvgmcData)
   
   /// lvceli.lv station
   case road(LatvianRoadsStation)
@@ -20,8 +20,8 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
   /// Latitude
   public var latitude: Double {
     switch self {
-    case .meteo(let meteoStation):
-      return meteoStation.latitude
+    case .lvgmc(let lvgmcData):
+      return lvgmcData.temperature
     case .road(let lvRoadStation):
       return lvRoadStation.latitude
     }
@@ -30,8 +30,8 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
   /// Longitude
   public var longitude: Double {
     switch self {
-    case .meteo(let meteoStation):
-      return meteoStation.longitude
+    case .lvgmc(let lvgmcData):
+      return lvgmcData.longitude
     case .road(let lvRoadStation):
       return lvRoadStation.longitude
     }
@@ -40,8 +40,8 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
   /// Temperature
   public var temperature: String? {
     switch self {
-    case .meteo(let meteoStation):
-      return meteoStation.temperature
+    case .lvgmc(let lvgmcData):
+      return lvgmcData.temperature.description
     case .road(let lvRoadStation):
       return lvRoadStation.temperature
     }
@@ -50,8 +50,8 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
   /// Wind
   public var wind: String? {
     switch self {
-    case .meteo(let meteoStation):
-      return meteoStation.wind
+    case .lvgmc(let lvgmcData):
+      return lvgmcData.windSpeed.description
     case .road(let lvRoadStation):
       return lvRoadStation.wind
     }
@@ -59,8 +59,8 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
   
   var uniqueId: String {
     switch self {
-    case .meteo(let meteoStation):
-      return meteoStation.id
+    case .lvgmc(let lvgmcData):
+      return lvgmcData.stationCode
     case .road(let lvRoadStation):
       return lvRoadStation.uniqueId
     }
@@ -69,7 +69,7 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
   /// ID of the station
   public var id: String {
     switch self {
-    case .meteo:
+    case .lvgmc:
       return Data((name + uniqueId + "meteo").utf8).hexDescription
     case .road:
       return Data((name + uniqueId + "lvRoad").utf8).hexDescription
@@ -79,8 +79,8 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
   /// Name of the station
   public var name: String {
     switch self {
-    case let .meteo(meteoStation):
-      return meteoStation.name
+    case let .lvgmc(lvgmcData):
+      return lvgmcData.stationName
     case let .road(roadStation):
       return roadStation.name
     }
@@ -118,21 +118,8 @@ public enum ObservationStation: Comparable, CustomStringConvertible, Equatable, 
   /// Weather parameters
   public var parameters: [[String: String]] {
     switch self {
-    case let .meteo(meteoStation):
-      guard let meteoStationParams = meteoStation.parameters else {
-        return []
-      }
-      
-      return meteoStationParams.compactMap { parameter in
-        guard let value = parameter.value else {
-          return nil
-        }
-        
-        return [
-          "name": parameter.name,
-          "value": value
-        ]
-      }.map { $0 }
+    case let .lvgmc(lvgmcData):
+      return lvgmcData.parameters
       
     case let .road(roadStation):
       return roadStation.weatherData.map { parameter in

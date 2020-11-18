@@ -9,11 +9,11 @@
 import Foundation
 
 extension Array where Element == ObservationStation {
-  var meteoLVStations: [Station] {
+  var lvgmcStations: [LvgmcData] {
     compactMap { station in
       switch station {
-      case .meteo(let station):
-        return station
+      case .lvgmc(let lvgmcData):
+        return lvgmcData
       case .road:
         return nil
       }
@@ -23,7 +23,7 @@ extension Array where Element == ObservationStation {
   var lvRoadStations: [LatvianRoadsStation] {
     compactMap { station in
       switch station {
-      case .meteo:
+      case .lvgmc:
         return nil
       case .road(let station):
         return station

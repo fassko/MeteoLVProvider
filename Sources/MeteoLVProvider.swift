@@ -1,10 +1,10 @@
 import Foundation
 
+import Combine
+
 public protocol MeteoLVProviderProtocol {
   /// Get observations from Latvian Environment, Geology and Meteorology Centre and Latvian State Roads
-  ///
-  /// - Parameter completion: Completion block with Result type
-  func observations(completion: @escaping (Result<[ObservationStation], Error>) -> Void)
+  func observations() -> AnyPublisher<[ObservationStation], Error>
 }
 
 /// Meteo.lv observations provider
@@ -12,54 +12,32 @@ public struct MeteoLVProvider: MeteoLVProviderProtocol {
   
   public init() {}
   
-  public func observations(completion: @escaping (Result<[ObservationStation], Error>) -> Void) {
-    meteoLVObservations { result in
-      switch result {
-      case .success(let meteoLVData):
-        var tmpStationsData = meteoLVData.map { ObservationStation.meteo($0) }
+  public func observations() -> AnyPublisher<[ObservationStation], Error> {
+    Publishers.CombineLatest(lvgmcObservations(), latvianRoadsObservations())
+      .mapError { $0 as Error }
+      .map { lvgmcData, lvRoadsData in
+        var tmpStationsData = lvgmcData.map {
+          ObservationStation.lvgmc($0)
+        }
         
-        self.latvianRoadsObservations { result in
-          switch result {
-          case .success(let lvRoadsData):
-            let lvRoadStations = lvRoadsData.map { ObservationStation.road($0) }
-            tmpStationsData.append(contentsOf: lvRoadStations)
-            
-            DispatchQueue.main.async {
-              completion(.success(tmpStationsData.sorted()))
-            }
-          case .failure(let error):
-            DispatchQueue.main.async {
-              completion(.failure(error))
-            }
-          }
+        let lvRoadStations = lvRoadsData.map {
+          ObservationStation.road($0)
         }
-      case .failure(let error):
-        DispatchQueue.main.async {
-          completion(.failure(error))
-        }
+        tmpStationsData.append(contentsOf: lvRoadStations)
+        
+        return tmpStationsData
       }
-    }
+      .subscribe(on: DispatchQueue.main)
+      .eraseToAnyPublisher()
   }
 
-  private func meteoLVObservations(completion: @escaping (Result<[Station], Error>) -> Void) {
-    let url = URL(string: "https://www.meteo.lv/meteorologijas-operativie-dati/")!
-    URLSession.shared.dataTask(with: url) { data, _, error in
-      if let error = error {
-        completion(.failure(error))
-      } else if let data = data {
-        do {
-          let observationData = try JSONDecoder().decode(ObservationData.self, from: data)
-          completion(.success(observationData.stations))
-        } catch {
-          completion(.failure(error))
-        }
-      }
-    }.resume()
+  public func lvgmcObservations() -> AnyPublisher<[LvgmcData], Error> {
+    LvgmcProvider().getWeatherDataCombine()
   }
   
-  private func latvianRoadsObservations(completion: @escaping (Result<[LatvianRoadsStation], Error>) -> Void) {
+  public func latvianRoadsObservations() -> AnyPublisher<[LatvianRoadsStation], Error> {
     let urlString = "https://gispub.lvceli.lv/gispub/rest/services/GISPUB/SIC_CMSPoint/MapServer/0/query"
-    var urlComponents = URLComponents(string: urlString)
+    var urlComponents = URLComponents(string: urlString)!
     
     let outFields = [
       "LVC_CMS.dbo.view_cms_statuss.nosaukums",
@@ -71,7 +49,7 @@ public struct MeteoLVProvider: MeteoLVProviderProtocol {
       "LVC_CMS.dbo.view_cms_statuss.km"
     ]
     
-    urlComponents?.queryItems = [
+    urlComponents.queryItems = [
       URLQueryItem(name: "where", value: "1=1"),
       URLQueryItem(name: "returnGeometry", value: "true"),
       URLQueryItem(name: "outFields", value: outFields.joined(separator: ",")),
@@ -81,23 +59,13 @@ public struct MeteoLVProvider: MeteoLVProviderProtocol {
       URLQueryItem(name: "f", value: "json")
     ]
     
-    guard let url = urlComponents?.url else {
-      completion(.failure(MeteoLVError.latvianRoadsweatherData))
-      return
-    }
-    
-    URLSession.shared.dataTask(with: url) { data, _, error in
-      if let error = error {
-        completion(.failure(error))
-      } else if let data = data {
-        do {
-          let stations = try JSONDecoder().decode(LatvianRoadsStationsData.self, from: data)
-          let filteredStations = stations.features.filter({ $0.attributes.weather ?? " N/A " != " N/A " })
-          completion(.success(filteredStations))
-        } catch {
-          completion(.failure(error))
-        }
-      }
-    }.resume()
+    return URLSession.shared
+      .dataTaskPublisher(for: urlComponents.url!)
+      .map { $0.data }
+      .decode(type: LatvianRoadsStationsData.self, decoder: JSONDecoder())
+      .mapError { $0 as Error }
+      .map { $0.features.filter({ $0.attributes.weather ?? " N/A " != " N/A " }) }
+      .subscribe(on: DispatchQueue.main)
+      .eraseToAnyPublisher()
   }
 }

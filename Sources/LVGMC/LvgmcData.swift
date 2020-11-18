@@ -8,11 +8,11 @@
 
 import Foundation
 
-public struct LvgmcData {
+public struct LvgmcData: Hashable {
   public let measuredDate: Date
   public let stationCode: String
   public let stationName: String
-  public let temperature: Double?
+  public let temperature: Double
   public let windDirection: Double?
   public let windSpeed: Double
   public let relativeHumidity: Double
@@ -74,6 +74,23 @@ struct LvgmcResponseData: Decodable {
     snowCover = try container.decodeIfPresent(String.self, forKey: .snowCover)?.doubleValue
     latitude = lvgmcStations.first { $0.code == stationCodeString }?.latitude
     longitude = lvgmcStations.first { $0.code == stationCodeString }?.longitude
+  }
+}
+
+extension LvgmcData {
+  var parameters: [[String: String]] {
+    [
+      [
+        "Temperatūra (°C)": temperature.description,
+        "Vēja virziens": windDirection?.description ?? "",
+        "Vēja ātrums (m/s)": windSpeed.description,
+        "Mitrums (%)": relativeHumidity.description,
+        "Spiediens (mm Hg)": atmosphericPressure.description,
+        "Nokrišņi (mm)": precipitation.description,
+        "Redzamība (m)": visibility.description,
+        "Sniega sega": snowCover.description
+      ]
+    ]
   }
 }
 

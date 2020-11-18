@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		630907DC2565A2C60099FC05 /* LvgmcWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630907DB2565A2C60099FC05 /* LvgmcWeatherForecast.swift */; };
-		631ABB02205D115C009A2F35 /* ObservationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFC205D115C009A2F35 /* ObservationData.swift */; };
+		630907E42565AF130099FC05 /* LVRoadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630907E32565AF130099FC05 /* LVRoadTests.swift */; };
 		631ABB03205D115C009A2F35 /* MeteoLVProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */; };
-		631ABB04205D115C009A2F35 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABAFE205D115C009A2F35 /* Parameter.swift */; };
-		631ABB07205D115C009A2F35 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB01205D115C009A2F35 /* Station.swift */; };
 		631ABB13205D11A5009A2F35 /* MeteoLVProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631ABAE3205D10DC009A2F35 /* MeteoLVProvider.framework */; };
-		631ABB5A205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */; };
+		631ABB5A205D173A009A2F35 /* MeteoLVProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ABB59205D173A009A2F35 /* MeteoLVProviderTests.swift */; };
 		635524E8205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */; };
 		636EC0F9244B33A8004E42A9 /* ObservationStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EC0F8244B33A8004E42A9 /* ObservationStation.swift */; };
 		637F7139205D655600865550 /* LatvianRoadsStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7138205D655600865550 /* LatvianRoadsStation.swift */; };
@@ -42,16 +40,14 @@
 
 /* Begin PBXFileReference section */
 		630907DB2565A2C60099FC05 /* LvgmcWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LvgmcWeatherForecast.swift; sourceTree = "<group>"; };
+		630907E32565AF130099FC05 /* LVRoadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVRoadTests.swift; sourceTree = "<group>"; };
 		631ABAE3205D10DC009A2F35 /* MeteoLVProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeteoLVProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		631ABAFC205D115C009A2F35 /* ObservationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationData.swift; sourceTree = "<group>"; };
 		631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoLVProvider.swift; sourceTree = "<group>"; };
-		631ABAFE205D115C009A2F35 /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
-		631ABB01205D115C009A2F35 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		631ABB08205D118C009A2F35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
 		631ABB0E205D11A5009A2F35 /* MeteoLVProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeteoLVProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		631ABB12205D11A5009A2F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		631ABB58205D13F8009A2F35 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoLVProvider_ExampleTests.swift; sourceTree = "<group>"; };
+		631ABB59205D173A009A2F35 /* MeteoLVProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoLVProviderTests.swift; sourceTree = "<group>"; };
 		635524E7205DBAAA00EC0E23 /* RoadStationWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadStationWeatherData.swift; sourceTree = "<group>"; };
 		636EC0F8244B33A8004E42A9 /* ObservationStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationStation.swift; sourceTree = "<group>"; };
 		637F7138205D655600865550 /* LatvianRoadsStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatvianRoadsStation.swift; sourceTree = "<group>"; };
@@ -122,13 +118,12 @@
 		631ABAFB205D115C009A2F35 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				639ADA992564605E002397CB /* lvgmc */,
+				639ADA992564605E002397CB /* LVGMC */,
 				637F7149205D75B500865550 /* MeteoLVError.swift */,
 				631ABAFD205D115C009A2F35 /* MeteoLVProvider.swift */,
 				636EC0F8244B33A8004E42A9 /* ObservationStation.swift */,
 				63F4D10424D5F10100E45AE0 /* Data+Extensions.swift */,
 				63F4D10224D5F0D400E45AE0 /* ObservationStation+Extensions.swift */,
-				637F7153205D95F100865550 /* Meteo center */,
 				637F713D205D65E500865550 /* Latvian roads */,
 			);
 			path = Sources;
@@ -137,7 +132,8 @@
 		631ABB0F205D11A5009A2F35 /* MeteoLVProviderTests */ = {
 			isa = PBXGroup;
 			children = (
-				631ABB59205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift */,
+				631ABB59205D173A009A2F35 /* MeteoLVProviderTests.swift */,
+				630907E32565AF130099FC05 /* LVRoadTests.swift */,
 				639ADAAE2564737E002397CB /* LvgmcDataTests.swift */,
 				631ABB12205D11A5009A2F35 /* Info.plist */,
 			);
@@ -168,17 +164,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		637F7153205D95F100865550 /* Meteo center */ = {
-			isa = PBXGroup;
-			children = (
-				631ABAFC205D115C009A2F35 /* ObservationData.swift */,
-				631ABAFE205D115C009A2F35 /* Parameter.swift */,
-				631ABB01205D115C009A2F35 /* Station.swift */,
-			);
-			name = "Meteo center";
-			sourceTree = "<group>";
-		};
-		639ADA992564605E002397CB /* lvgmc */ = {
+		639ADA992564605E002397CB /* LVGMC */ = {
 			isa = PBXGroup;
 			children = (
 				639ADAA225646126002397CB /* LvgmcStation.swift */,
@@ -186,7 +172,7 @@
 				630907DB2565A2C60099FC05 /* LvgmcWeatherForecast.swift */,
 				639ADAAA25647253002397CB /* LvgmcData.swift */,
 			);
-			path = lvgmc;
+			path = LVGMC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,14 +312,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				635524E8205DBAAA00EC0E23 /* RoadStationWeatherData.swift in Sources */,
-				631ABB04205D115C009A2F35 /* Parameter.swift in Sources */,
-				631ABB07205D115C009A2F35 /* Station.swift in Sources */,
 				63F4D10324D5F0D400E45AE0 /* ObservationStation+Extensions.swift in Sources */,
 				637F7139205D655600865550 /* LatvianRoadsStation.swift in Sources */,
 				637F713F205D660000865550 /* LatvianRoadsStationsData.swift in Sources */,
 				636EC0F9244B33A8004E42A9 /* ObservationStation.swift in Sources */,
 				63F4D10524D5F10100E45AE0 /* Data+Extensions.swift in Sources */,
-				631ABB02205D115C009A2F35 /* ObservationData.swift in Sources */,
 				637F714A205D75B500865550 /* MeteoLVError.swift in Sources */,
 				6382D583205DA45000CAE2D4 /* Geometry.swift in Sources */,
 				630907DC2565A2C60099FC05 /* LvgmcWeatherForecast.swift in Sources */,
@@ -349,8 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				631ABB5A205D173A009A2F35 /* MeteoLVProvider_ExampleTests.swift in Sources */,
+				631ABB5A205D173A009A2F35 /* MeteoLVProviderTests.swift in Sources */,
 				639ADAAF2564737E002397CB /* LvgmcDataTests.swift in Sources */,
+				630907E42565AF130099FC05 /* LVRoadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
